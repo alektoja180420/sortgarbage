@@ -14,6 +14,7 @@ namespace SortGarbage
     {
         public Main()
         {
+dupa
             InitializeComponent();
             //Show empty board
 
