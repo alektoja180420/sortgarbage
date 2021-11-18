@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SortGarbage.Controllers
+namespace SortGarbage.Views.Interfaces
 {
-    public class GameController
+    public interface IHighScoresView
     {
-
     }
 }
