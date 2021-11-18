@@ -8,22 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SortGarbage
+namespace SortGarbage.Views.Dialogs
 {
-    public partial class Main : Form
+    public partial class UsernameDialog : Form
     {
-        public Main()
+        public UsernameDialog()
         {
-dupa
             InitializeComponent();
-            //Show empty board
-
-            //Start Game
-
-            //Handle Game Finished, 
         }
 
-        private void Main_Load(object sender, EventArgs e)
+        private void UsernameTextbox_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SortGarbage.Views.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,10 @@ using System.Windows.Forms;
 
 namespace SortGarbage
 {
-    public partial class Main : Form
+    public partial class Main : Form, IMainMenuView
     {
         public Main()
         {
-dupa
             InitializeComponent();
             //Show empty board
 
@@ -24,6 +24,16 @@ dupa
         }
 
         private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TitleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonStartGame_Click(object sender, EventArgs e)
         {
 
         }

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace SortGarbage.Controllers
 {
-    public class GameController
+    class HighScoresController
     {
-
     }
 }
