@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace SortGarbage.Models.GameModels
 {
-    public class Garbage
+    class Container
     {
-        public GarbageType GarbageType { get; set; }
-        public string Name { get; set; }
+        GarbageType ContainerType { get; set; }
+
     }
 }

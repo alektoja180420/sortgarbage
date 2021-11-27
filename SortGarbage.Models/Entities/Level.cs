@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SortGarbage.Models.Entities
 {
-    class Level
+    public class Level
     {
+        public Guid Id { get; set; }
+        public List<GarbageEntity> GarbageList { get; set; }
+
+
     }
 }

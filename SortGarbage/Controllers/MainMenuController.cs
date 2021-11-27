@@ -9,10 +9,11 @@ namespace SortGarbage.Controllers
 {
     public class MainMenuController
     {
+        private IMainMenuView _mainMenuView;
 
-        public MainMenuController(IView view)
+        public MainMenuController(IMainMenuView view)
         {
-
+            _mainMenuView = view;
         }
     }
 }

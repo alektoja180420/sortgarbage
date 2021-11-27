@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SortGarbage.Services
 {
-    class LevelService
+    public class LevelService
     {
     }
 }

@@ -1,4 +1,6 @@
-﻿using SortGarbage.Views.Interfaces;
+﻿using SortGarbage.Controllers;
+using SortGarbage.Views;
+using SortGarbage.Views.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +15,10 @@ namespace SortGarbage
 {
     public partial class Main : Form, IMainMenuView
     {
+        private MainMenuController _mainMenuController;
         public Main()
         {
+            _mainMenuController = new MainMenuController(this);
             InitializeComponent();
             //Show empty board
 
@@ -35,7 +39,19 @@ namespace SortGarbage
 
         private void ButtonStartGame_Click(object sender, EventArgs e)
         {
+            var gameView = new GameView();
+            gameView.Show();
+        }
 
+        private void ButtonScores_Click(object sender, EventArgs e)
+        {
+            var highScoresView = new HighScoresView();
+            highScoresView.Show();
+        }
+
+        private void ButtonEndGame_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

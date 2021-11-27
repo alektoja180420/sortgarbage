@@ -64,6 +64,7 @@ namespace SortGarbage
             this.ButtonScores.TabIndex = 2;
             this.ButtonScores.Text = "Historia wynikow";
             this.ButtonScores.UseVisualStyleBackColor = true;
+            this.ButtonScores.Click += new System.EventHandler(this.ButtonScores_Click);
             // 
             // ButtonEndGame
             // 
@@ -73,6 +74,7 @@ namespace SortGarbage
             this.ButtonEndGame.TabIndex = 3;
             this.ButtonEndGame.Text = "Zakoncz gre";
             this.ButtonEndGame.UseVisualStyleBackColor = true;
+            this.ButtonEndGame.Click += new System.EventHandler(this.ButtonEndGame_Click);
             // 
             // Main
             // 

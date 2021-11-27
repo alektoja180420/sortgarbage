@@ -71,6 +71,7 @@ namespace SortGarbage.Views
             this.Controls.Add(this.dataGridView1);
             this.Name = "HighScoresView";
             this.Text = "HighScoresView";
+            this.Load += new System.EventHandler(this.HighScoresView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
