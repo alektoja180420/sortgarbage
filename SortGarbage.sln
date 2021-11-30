@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31424.327
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortGarbage", "SortGarbage\SortGarbage.csproj", "{6B6607E8-6E9D-4467-B959-BDC1A3D57A1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortGarbage", "SortGarbage\SortGarbage.csproj", "{6B6607E8-6E9D-4467-B959-BDC1A3D57A1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortGarbage.Models", "SortGarbage.Models\SortGarbage.Models.csproj", "{E7E6B948-D6F7-4F66-9FAC-6B174262342D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortGarbage.Models", "SortGarbage.Models\SortGarbage.Models.csproj", "{E7E6B948-D6F7-4F66-9FAC-6B174262342D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortGarbage.Persistence", "SortGarbage.Persistence\SortGarbage.Persistence.csproj", "{6C850BD5-FB22-4CF7-99A5-49F4C6F88D0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortGarbage.Persistence", "SortGarbage.Persistence\SortGarbage.Persistence.csproj", "{6C850BD5-FB22-4CF7-99A5-49F4C6F88D0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortGarbage.Services", "SortGarbage.Services\SortGarbage.Services.csproj", "{877CB66A-D37F-486F-9630-EEA00F52A6F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortGarbage.Services", "SortGarbage.Services\SortGarbage.Services.csproj", "{877CB66A-D37F-486F-9630-EEA00F52A6F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
