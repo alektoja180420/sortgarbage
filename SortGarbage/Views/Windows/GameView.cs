@@ -117,5 +117,107 @@ namespace SortGarbage.Views
         {
             gameController.OnContainerSelected(garbageButton2.Location);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button3.Location);
+        }
+
+
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button33_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button33.Location);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button4.Location);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button5.Location);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button6.Location);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button8.Location);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button7.Location);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button2.Location);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button9.Location);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_MouseUp(object sender, MouseEventArgs e)
+        {
+            gameController.OnContainerSelected(button10.Location);
+        }
     }
 }

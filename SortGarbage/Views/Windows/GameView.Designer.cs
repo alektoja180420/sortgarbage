@@ -34,6 +34,16 @@ namespace SortGarbage.Views
             this.TimerLabel = new System.Windows.Forms.Label();
             this.EndGameButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.garbageButton2 = new SortGarbage.Views.CustomControls.GarbageButton();
             this.garbageButton1 = new SortGarbage.Views.CustomControls.GarbageButton();
             this.PaperButton = new System.Windows.Forms.Button();
@@ -83,6 +93,16 @@ namespace SortGarbage.Views
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button33);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.garbageButton2);
             this.panel1.Controls.Add(this.garbageButton1);
             this.panel1.Controls.Add(this.PaperButton);
@@ -97,17 +117,161 @@ namespace SortGarbage.Views
             this.panel1.Size = new System.Drawing.Size(775, 397);
             this.panel1.TabIndex = 1;
             // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(465, 214);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 53);
+            this.button10.TabIndex = 19;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button10_MouseUp);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(390, 195);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(51, 54);
+            this.button9.TabIndex = 18;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button9_MouseUp);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(443, 120);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(68, 59);
+            this.button8.TabIndex = 17;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button8_MouseUp);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(172, 201);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 16;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button7_MouseUp);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(334, 105);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(62, 63);
+            this.button6.TabIndex = 15;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button6_MouseUp);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(253, 97);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(24, 82);
+            this.button5.TabIndex = 14;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button5_MouseUp);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(174, 108);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(29, 61);
+            this.button4.TabIndex = 13;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button4_MouseUp);
+            // 
+            // button33
+            // 
+            this.button33.BackColor = System.Drawing.Color.Transparent;
+            this.button33.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button33.BackgroundImage")));
+            this.button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button33.Location = new System.Drawing.Point(443, 13);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(97, 70);
+            this.button33.TabIndex = 12;
+            this.button33.UseVisualStyleBackColor = false;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            this.button33.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button33_MouseUp);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button3.Location = new System.Drawing.Point(334, 14);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(92, 69);
+            this.button3.TabIndex = 11;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button3_MouseUp);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(276, 195);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(66, 42);
+            this.button2.TabIndex = 10;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button2_MouseUp);
+            // 
             // garbageButton2
             // 
+            this.garbageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.garbageButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("garbageButton2.BackgroundImage")));
+            this.garbageButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.garbageButton2.FlatAppearance.BorderSize = 0;
             this.garbageButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.garbageButton2.Location = new System.Drawing.Point(355, 80);
+            this.garbageButton2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.garbageButton2.Location = new System.Drawing.Point(253, 14);
             this.garbageButton2.Name = "garbageButton2";
             this.garbageButton2.Size = new System.Drawing.Size(75, 57);
             this.garbageButton2.TabIndex = 9;
             this.garbageButton2.TabStop = false;
-            this.garbageButton2.Text = "garbageButton2";
-            this.garbageButton2.UseVisualStyleBackColor = true;
+            this.garbageButton2.UseVisualStyleBackColor = false;
             this.garbageButton2.Click += new System.EventHandler(this.garbageButton2_Click);
             this.garbageButton2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.garbageButton2_MouseUp);
             // 
@@ -118,7 +282,7 @@ namespace SortGarbage.Views
             this.garbageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.garbageButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.garbageButton1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.garbageButton1.Location = new System.Drawing.Point(214, 37);
+            this.garbageButton1.Location = new System.Drawing.Point(143, 14);
             this.garbageButton1.Name = "garbageButton1";
             this.garbageButton1.Size = new System.Drawing.Size(104, 58);
             this.garbageButton1.TabIndex = 8;
@@ -129,7 +293,7 @@ namespace SortGarbage.Views
             // 
             // PaperButton
             // 
-            this.PaperButton.Location = new System.Drawing.Point(480, 151);
+            this.PaperButton.Location = new System.Drawing.Point(314, 371);
             this.PaperButton.Name = "PaperButton";
             this.PaperButton.Size = new System.Drawing.Size(75, 23);
             this.PaperButton.TabIndex = 7;
@@ -139,7 +303,7 @@ namespace SortGarbage.Views
             // 
             // GlassButton
             // 
-            this.GlassButton.Location = new System.Drawing.Point(480, 97);
+            this.GlassButton.Location = new System.Drawing.Point(152, 371);
             this.GlassButton.Name = "GlassButton";
             this.GlassButton.Size = new System.Drawing.Size(75, 23);
             this.GlassButton.TabIndex = 6;
@@ -149,7 +313,7 @@ namespace SortGarbage.Views
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(321, 194);
+            this.button1.Location = new System.Drawing.Point(233, 371);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -235,5 +399,15 @@ namespace SortGarbage.Views
         private System.Windows.Forms.Button button1;
         private CustomControls.GarbageButton garbageButton1;
         private CustomControls.GarbageButton garbageButton2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button33;
     }
 }
