@@ -28,7 +28,8 @@ namespace SortGarbage.Controllers
 
         public void OnContainerSelected(Point point)
         {
-            foreach(var container in _gameView.containerPictureBoxes)
+            IncreaseMoveCounter();
+            foreach (var container in _gameView.containerPictureBoxes)
             {
                 if (container.ElementTouchedContainer(point))
                 {
@@ -37,26 +38,35 @@ namespace SortGarbage.Controllers
             }
         }
 
+        public void IncreaseMoveCounter()
+        {
+            _gameProgress.IncreaseMoveCounter();
+            _gameView.UpdateMoveCounter(_gameProgress.MovesCounter);
+        }
+
         public void OnProperContainerSelected()
         {
             _gameProgress.IncreaseScore(10);
             _gameProgress.IncreaseMoveCounter();
+            _gameView.UpdateScore(_gameProgress.TotalScore);
         }
 
         public void OnWrongContainerSelected()
         {
             _gameProgress.DecreaseScore(10);
             _gameProgress.IncreaseMoveCounter();
+            _gameView.UpdateScore(_gameProgress.TotalScore);
         }
 
-        public FinalScore OnGameFinished()
+        public void OnGameFinished()
         {
-            return new FinalScore
+            var finalScore = new FinalScore
             {
                 MovesCounter = _gameProgress.MovesCounter,
                 TotalGameTime = _gameProgress.GetGameTime(),
                 TotalScore = _gameProgress.TotalScore
             };
+            _gameView.FinishGame(finalScore);
         }
     }
 }

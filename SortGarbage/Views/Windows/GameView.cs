@@ -1,6 +1,7 @@
 ﻿using SortGarbage.Controllers;
 using SortGarbage.Models.GameModels;
 using SortGarbage.Views.CustomControls;
+using SortGarbage.Views.Dialogs;
 using SortGarbage.Views.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -21,14 +22,17 @@ namespace SortGarbage.Views
         private ContainerPictureBox bioPictureBox;
         private ContainerPictureBox paperPictureBox;
         private ContainerPictureBox plasticPictureBox;
+        private string playerName;
 
         private List<ContainerPictureBox> containers;
+        private List<GarbageButton> garbageButtons;
 
         public List<ContainerPictureBox> containerPictureBoxes { get { return containers; } set { this.containerPictureBoxes = value; } }
 
-        public GameView()
+        public GameView(string playerName)
         {
             InitializeComponent();
+            this.playerName = playerName;
             gameController = new GameController(this);
             InitializePictureBoxes();
         }
@@ -36,18 +40,14 @@ namespace SortGarbage.Views
         private void GameView_Load(object sender, EventArgs e)
         {
             gameController.StartGame();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            userNameLabel.Text = playerName;
         }
 
         private void GlassButton_Click(object sender, EventArgs e)
         {
             var garbage = new Garbage
             {
-                Name = "Butla specka",
+                GarbageName = "Butla specka",
                 GarbageType = Models.Enums.GarbageType.Glass
             };
 
@@ -118,106 +118,42 @@ namespace SortGarbage.Views
             gameController.OnContainerSelected(garbageButton2.Location);
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void scoreLabel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_MouseUp(object sender, MouseEventArgs e)
+        public void UpdateScore(int score)
         {
-            gameController.OnContainerSelected(button3.Location);
+            scoreLabel.Text = $"Score: {score}";
         }
 
-
-
-        private void button33_Click(object sender, EventArgs e)
+        private void EndGameButton_Click(object sender, EventArgs e)
         {
-
+            gameController.OnGameFinished();
         }
 
-        private void button33_MouseUp(object sender, MouseEventArgs e)
+        public void FinishGame(FinalScore finalScore)
         {
-            gameController.OnContainerSelected(button33.Location);
+            var scoreDialog = new ScoreDialog(finalScore, playerName);
+            scoreDialog.Show();
+            Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(button4.Location);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button5_MouseUp(object sender, MouseEventArgs e)
+        public void UpdateMoveCounter(int moveCounter)
         {
-            gameController.OnContainerSelected(button5.Location);
+            movesLabel.Text = $"Ruchy: {moveCounter}";
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void CreateGarbageButtons()
         {
-
-        }
-
-        private void button6_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(button6.Location);
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(button8.Location);
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(button7.Location);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(button2.Location);
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(button9.Location);
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(button10.Location);
+            var garbageButton = new GarbageButton();
+            this.Controls.Add(garbageButton);
         }
     }
 }

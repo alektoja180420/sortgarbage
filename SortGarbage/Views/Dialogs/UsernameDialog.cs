@@ -12,6 +12,8 @@ namespace SortGarbage.Views.Dialogs
 {
     public partial class UsernameDialog : Form
     {
+        private string playerName;
+
         public UsernameDialog()
         {
             InitializeComponent();
@@ -19,7 +21,26 @@ namespace SortGarbage.Views.Dialogs
 
         private void UsernameTextbox_TextChanged(object sender, EventArgs e)
         {
+            if (UsernameTextbox.Text.Length > 0)
+                this.playerName = UsernameTextbox.Text;
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (ShouldStartGame())
+            {
+                var gameView = new GameView(playerName);
+                gameView.Show();
+            }
+            else
+            {
+                MessageBox.Show("Twoj nick powinien zawierac co najmniej 3 litery");
+            }
+        }
+        
+        private bool ShouldStartGame()
+        {
+            return UsernameTextbox.Text.Length >= 3;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using SortGarbage.Controllers;
+using SortGarbage.Models.Entities;
 using SortGarbage.Views.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -17,11 +18,21 @@ namespace SortGarbage.Views
         private HighScoresController _highScoresController;
         public HighScoresView()
         {
-            _highScoresController = new HighScoresController(this);
             InitializeComponent();
+            _highScoresController = new HighScoresController(this);
+        }
+
+        public void AttachHighScores(List<HighScoreEntity> highScores)
+        {
+            dataGridView1.DataSource = highScores;
         }
 
         private void HighScoresView_Load(object sender, EventArgs e)
+        {
+            _highScoresController.PopulateHighScores();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

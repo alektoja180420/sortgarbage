@@ -8,4 +8,19 @@
     <Folder Include="Database\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SortGarbage.Models\SortGarbage.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="smieci.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

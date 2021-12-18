@@ -1,5 +1,6 @@
 ﻿using SortGarbage.Controllers;
 using SortGarbage.Views;
+using SortGarbage.Views.Dialogs;
 using SortGarbage.Views.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -39,8 +40,10 @@ namespace SortGarbage
 
         private void ButtonStartGame_Click(object sender, EventArgs e)
         {
-            var gameView = new GameView();
-            gameView.Show();
+            var usernameDialog = new UsernameDialog();
+            usernameDialog.Show();
+            /*var gameView = new GameView();
+            gameView.Show(); */
         }
 
         private void ButtonScores_Click(object sender, EventArgs e)

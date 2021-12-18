@@ -1,6 +1,9 @@
-﻿using System;
+﻿using SortGarbage.Models.GameModels;
+using SortGarbage.Persistence.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +15,10 @@ namespace SortGarbage.Views.CustomControls
     {
         private bool isSomethingDragged = false;
         private Point ptOffset;
+        
+        /* private Garbage _garbage;
+        private GarbageRepository garbageRepository;*/
+
         public GarbageButton() : base()
         {
             //FitImageSize();
@@ -19,6 +26,8 @@ namespace SortGarbage.Views.CustomControls
             TabStop = false;
             FlatAppearance.BorderSize = 0;
             Text = "";
+            //AssignBackgroundImage();
+            //_garbage = new Garbage() { GarbageType = GarbageTy}
         }
 
         private void FitImageSize()
@@ -26,6 +35,14 @@ namespace SortGarbage.Views.CustomControls
             if(this.BackgroundImage == null) { return; }
             var picture = new Bitmap(this.BackgroundImage, new Size(this.Width, this.Height));
             this.BackgroundImage = picture;
+        }
+
+        private void AssignBackgroundImage()
+        {
+            var garbageRepository = new GarbageRepository();
+            var _garbage = garbageRepository.GetRandomGarbage();
+            /*var bitmap = Bitmap.FromFile(_garbage.Path);
+            BackgroundImage = (Image)bitmap; */
         }
 
         protected override void OnMouseMove(MouseEventArgs mevent)

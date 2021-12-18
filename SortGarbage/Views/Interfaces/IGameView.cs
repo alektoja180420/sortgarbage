@@ -1,4 +1,5 @@
-﻿using SortGarbage.Views.CustomControls;
+﻿using SortGarbage.Models.GameModels;
+using SortGarbage.Views.CustomControls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ namespace SortGarbage.Views.Interfaces
     {
         List<ContainerPictureBox> containerPictureBoxes { get; set; }
         void ShowDummyDialog(string message);
+
+        void UpdateScore(int score);
+
+        void FinishGame(FinalScore finalScore);
+        void UpdateMoveCounter(int moveCounter);
         //List<>
     }
 }

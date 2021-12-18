@@ -9,7 +9,8 @@ namespace SortGarbage.Models.GameModels
 {
     public class Garbage
     {
+        public string Path { get; set; }
         public GarbageType GarbageType { get; set; }
-        public string Name { get; set; }
+        public string GarbageName { get; set; }
     }
 }

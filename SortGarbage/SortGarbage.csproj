@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SortGarbage.Models\SortGarbage.Models.csproj" />
+    <ProjectReference Include="..\SortGarbage.Services\SortGarbage.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
