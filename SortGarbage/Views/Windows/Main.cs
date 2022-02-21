@@ -14,18 +14,17 @@ using System.Windows.Forms;
 
 namespace SortGarbage
 {
+    /// <summary>
+    /// Okienko menu
+    /// </summary>
     public partial class Main : Form, IMainMenuView
     {
-        private MainMenuController _mainMenuController;
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
         public Main()
         {
-            _mainMenuController = new MainMenuController(this);
             InitializeComponent();
-            //Show empty board
-
-            //Start Game
-
-            //Handle Game Finished, 
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -33,17 +32,10 @@ namespace SortGarbage
 
         }
 
-        private void TitleLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ButtonStartGame_Click(object sender, EventArgs e)
         {
-            var usernameDialog = new UsernameDialog();
+            var usernameDialog = new UsernameDialog(this);
             usernameDialog.Show();
-            /*var gameView = new GameView();
-            gameView.Show(); */
         }
 
         private void ButtonScores_Click(object sender, EventArgs e)

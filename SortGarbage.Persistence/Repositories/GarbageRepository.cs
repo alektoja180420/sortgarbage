@@ -9,17 +9,24 @@ using System.Threading.Tasks;
 
 namespace SortGarbage.Persistence.Repositories
 {
+    /// <summary>
+    /// Klasa obsugujaca polaczenie z baza danych smieci
+    /// </summary>
     public class GarbageRepository
     {
-        public List<Garbage> garbages;
-
+        private List<Garbage> garbages;
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
         public GarbageRepository()
         {
             garbages = new List<Garbage>();
             ConnectToGarbageDatabase();
         }
-
-        public List<Garbage> GetGarbages() { return garbages; }
+          /// <summary>
+          /// Metoda pobierajaca losową wartosc smiecia z bazy danych
+          /// </summary>
+          /// <returns>smiec</returns>
         public Garbage GetRandomGarbage()
         {
             var random = new Random();

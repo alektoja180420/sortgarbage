@@ -1,22 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SortGarbage.Views.Interfaces;
+using System;
 using System.Windows.Forms;
 
 namespace SortGarbage.Views.Dialogs
 {
+    /// <summary>
+    /// Okienko do wpisania nazwy gracza
+    /// </summary>
     public partial class UsernameDialog : Form
     {
         private string playerName;
-
-        public UsernameDialog()
+        private IMainMenuView mainMenuReference;
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="mainMenu">Referencja do menu glownego</param>
+        public UsernameDialog(IMainMenuView mainMenu)
         {
             InitializeComponent();
+            mainMenuReference = mainMenu;
         }
 
         private void UsernameTextbox_TextChanged(object sender, EventArgs e)
@@ -31,6 +33,8 @@ namespace SortGarbage.Views.Dialogs
             {
                 var gameView = new GameView(playerName);
                 gameView.Show();
+                mainMenuReference.Hide();
+                this.Close();
             }
             else
             {

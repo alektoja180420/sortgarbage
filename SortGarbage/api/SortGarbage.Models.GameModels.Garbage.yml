@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Models.GameModels.Garbage
+  commentId: T:SortGarbage.Models.GameModels.Garbage
+  id: Garbage
+  parent: SortGarbage.Models.GameModels
+  children:
+  - SortGarbage.Models.GameModels.Garbage.GarbageName
+  - SortGarbage.Models.GameModels.Garbage.GarbageType
+  - SortGarbage.Models.GameModels.Garbage.Path
+  langs:
+  - csharp
+  - vb
+  name: Garbage
+  nameWithType: Garbage
+  fullName: SortGarbage.Models.GameModels.Garbage
+  type: Class
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/Garbage.cs
+    id: Garbage
+    path: ../SortGarbage.Models/GameModels/Garbage.cs
+    startLine: 12
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nModel smiecia\n"
+  example: []
+  syntax:
+    content: public class Garbage
+    content.vb: Public Class Garbage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SortGarbage.Models.GameModels.Garbage.Path
+  commentId: P:SortGarbage.Models.GameModels.Garbage.Path
+  id: Path
+  parent: SortGarbage.Models.GameModels.Garbage
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: Garbage.Path
+  fullName: SortGarbage.Models.GameModels.Garbage.Path
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/Garbage.cs
+    id: Path
+    path: ../SortGarbage.Models/GameModels/Garbage.cs
+    startLine: 17
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nSciezka do obrazka\n"
+  example: []
+  syntax:
+    content: public string Path { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Path As String
+  overload: SortGarbage.Models.GameModels.Garbage.Path*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.Garbage.GarbageType
+  commentId: P:SortGarbage.Models.GameModels.Garbage.GarbageType
+  id: GarbageType
+  parent: SortGarbage.Models.GameModels.Garbage
+  langs:
+  - csharp
+  - vb
+  name: GarbageType
+  nameWithType: Garbage.GarbageType
+  fullName: SortGarbage.Models.GameModels.Garbage.GarbageType
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/Garbage.cs
+    id: GarbageType
+    path: ../SortGarbage.Models/GameModels/Garbage.cs
+    startLine: 21
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nTyp smiecia\n"
+  example: []
+  syntax:
+    content: public GarbageType GarbageType { get; set; }
+    parameters: []
+    return:
+      type: SortGarbage.Models.Enums.GarbageType
+    content.vb: Public Property GarbageType As GarbageType
+  overload: SortGarbage.Models.GameModels.Garbage.GarbageType*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.Garbage.GarbageName
+  commentId: P:SortGarbage.Models.GameModels.Garbage.GarbageName
+  id: GarbageName
+  parent: SortGarbage.Models.GameModels.Garbage
+  langs:
+  - csharp
+  - vb
+  name: GarbageName
+  nameWithType: Garbage.GarbageName
+  fullName: SortGarbage.Models.GameModels.Garbage.GarbageName
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/Garbage.cs
+    id: GarbageName
+    path: ../SortGarbage.Models/GameModels/Garbage.cs
+    startLine: 25
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nNazwa smiecia\n"
+  example: []
+  syntax:
+    content: public string GarbageName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property GarbageName As String
+  overload: SortGarbage.Models.GameModels.Garbage.GarbageName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: SortGarbage.Models.GameModels
+  commentId: N:SortGarbage.Models.GameModels
+  name: SortGarbage.Models.GameModels
+  nameWithType: SortGarbage.Models.GameModels
+  fullName: SortGarbage.Models.GameModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SortGarbage.Models.GameModels.Garbage.Path*
+  commentId: Overload:SortGarbage.Models.GameModels.Garbage.Path
+  name: Path
+  nameWithType: Garbage.Path
+  fullName: SortGarbage.Models.GameModels.Garbage.Path
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SortGarbage.Models.GameModels.Garbage.GarbageType*
+  commentId: Overload:SortGarbage.Models.GameModels.Garbage.GarbageType
+  name: GarbageType
+  nameWithType: Garbage.GarbageType
+  fullName: SortGarbage.Models.GameModels.Garbage.GarbageType
+- uid: SortGarbage.Models.Enums.GarbageType
+  commentId: T:SortGarbage.Models.Enums.GarbageType
+  parent: SortGarbage.Models.Enums
+  name: GarbageType
+  nameWithType: GarbageType
+  fullName: SortGarbage.Models.Enums.GarbageType
+- uid: SortGarbage.Models.Enums
+  commentId: N:SortGarbage.Models.Enums
+  name: SortGarbage.Models.Enums
+  nameWithType: SortGarbage.Models.Enums
+  fullName: SortGarbage.Models.Enums
+- uid: SortGarbage.Models.GameModels.Garbage.GarbageName*
+  commentId: Overload:SortGarbage.Models.GameModels.Garbage.GarbageName
+  name: GarbageName
+  nameWithType: Garbage.GarbageName
+  fullName: SortGarbage.Models.GameModels.Garbage.GarbageName

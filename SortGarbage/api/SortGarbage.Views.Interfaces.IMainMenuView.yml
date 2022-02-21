@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Views.Interfaces.IMainMenuView
+  commentId: T:SortGarbage.Views.Interfaces.IMainMenuView
+  id: IMainMenuView
+  parent: SortGarbage.Views.Interfaces
+  children:
+  - SortGarbage.Views.Interfaces.IMainMenuView.Hide
+  langs:
+  - csharp
+  - vb
+  name: IMainMenuView
+  nameWithType: IMainMenuView
+  fullName: SortGarbage.Views.Interfaces.IMainMenuView
+  type: Interface
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IMainMenuView.cs
+    id: IMainMenuView
+    path: Views/Interfaces/IMainMenuView.cs
+    startLine: 11
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  summary: "\nInterfejs do okienka menu\n"
+  example: []
+  syntax:
+    content: public interface IMainMenuView
+    content.vb: Public Interface IMainMenuView
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: SortGarbage.Views.Interfaces.IMainMenuView.Hide
+  commentId: M:SortGarbage.Views.Interfaces.IMainMenuView.Hide
+  id: Hide
+  parent: SortGarbage.Views.Interfaces.IMainMenuView
+  langs:
+  - csharp
+  - vb
+  name: Hide()
+  nameWithType: IMainMenuView.Hide()
+  fullName: SortGarbage.Views.Interfaces.IMainMenuView.Hide()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IMainMenuView.cs
+    id: Hide
+    path: Views/Interfaces/IMainMenuView.cs
+    startLine: 13
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  syntax:
+    content: void Hide()
+    content.vb: Sub Hide
+  overload: SortGarbage.Views.Interfaces.IMainMenuView.Hide*
+references:
+- uid: SortGarbage.Views.Interfaces
+  commentId: N:SortGarbage.Views.Interfaces
+  name: SortGarbage.Views.Interfaces
+  nameWithType: SortGarbage.Views.Interfaces
+  fullName: SortGarbage.Views.Interfaces
+- uid: SortGarbage.Views.Interfaces.IMainMenuView.Hide*
+  commentId: Overload:SortGarbage.Views.Interfaces.IMainMenuView.Hide
+  name: Hide
+  nameWithType: IMainMenuView.Hide
+  fullName: SortGarbage.Views.Interfaces.IMainMenuView.Hide

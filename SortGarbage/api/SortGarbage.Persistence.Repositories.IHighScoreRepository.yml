@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Persistence.Repositories.IHighScoreRepository
+  commentId: T:SortGarbage.Persistence.Repositories.IHighScoreRepository
+  id: IHighScoreRepository
+  parent: SortGarbage.Persistence.Repositories
+  children:
+  - SortGarbage.Persistence.Repositories.IHighScoreRepository.AddHighScore(SortGarbage.Models.Entities.HighScoreEntity)
+  - SortGarbage.Persistence.Repositories.IHighScoreRepository.GetHighScores
+  langs:
+  - csharp
+  - vb
+  name: IHighScoreRepository
+  nameWithType: IHighScoreRepository
+  fullName: SortGarbage.Persistence.Repositories.IHighScoreRepository
+  type: Interface
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Persistence/Repositories/IHighScoreRepository.cs
+    id: IHighScoreRepository
+    path: ../SortGarbage.Persistence/Repositories/IHighScoreRepository.cs
+    startLine: 12
+  assemblies:
+  - SortGarbage.Persistence
+  namespace: SortGarbage.Persistence.Repositories
+  summary: "\nInterfejs repozytorium\n"
+  example: []
+  syntax:
+    content: public interface IHighScoreRepository
+    content.vb: Public Interface IHighScoreRepository
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: SortGarbage.Persistence.Repositories.IHighScoreRepository.GetHighScores
+  commentId: M:SortGarbage.Persistence.Repositories.IHighScoreRepository.GetHighScores
+  id: GetHighScores
+  parent: SortGarbage.Persistence.Repositories.IHighScoreRepository
+  langs:
+  - csharp
+  - vb
+  name: GetHighScores()
+  nameWithType: IHighScoreRepository.GetHighScores()
+  fullName: SortGarbage.Persistence.Repositories.IHighScoreRepository.GetHighScores()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Persistence/Repositories/IHighScoreRepository.cs
+    id: GetHighScores
+    path: ../SortGarbage.Persistence/Repositories/IHighScoreRepository.cs
+    startLine: 14
+  assemblies:
+  - SortGarbage.Persistence
+  namespace: SortGarbage.Persistence.Repositories
+  syntax:
+    content: List<HighScoreEntity> GetHighScores()
+    return:
+      type: System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity}
+    content.vb: Function GetHighScores As List(Of HighScoreEntity)
+  overload: SortGarbage.Persistence.Repositories.IHighScoreRepository.GetHighScores*
+- uid: SortGarbage.Persistence.Repositories.IHighScoreRepository.AddHighScore(SortGarbage.Models.Entities.HighScoreEntity)
+  commentId: M:SortGarbage.Persistence.Repositories.IHighScoreRepository.AddHighScore(SortGarbage.Models.Entities.HighScoreEntity)
+  id: AddHighScore(SortGarbage.Models.Entities.HighScoreEntity)
+  parent: SortGarbage.Persistence.Repositories.IHighScoreRepository
+  langs:
+  - csharp
+  - vb
+  name: AddHighScore(HighScoreEntity)
+  nameWithType: IHighScoreRepository.AddHighScore(HighScoreEntity)
+  fullName: SortGarbage.Persistence.Repositories.IHighScoreRepository.AddHighScore(SortGarbage.Models.Entities.HighScoreEntity)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Persistence/Repositories/IHighScoreRepository.cs
+    id: AddHighScore
+    path: ../SortGarbage.Persistence/Repositories/IHighScoreRepository.cs
+    startLine: 15
+  assemblies:
+  - SortGarbage.Persistence
+  namespace: SortGarbage.Persistence.Repositories
+  syntax:
+    content: void AddHighScore(HighScoreEntity entity)
+    parameters:
+    - id: entity
+      type: SortGarbage.Models.Entities.HighScoreEntity
+    content.vb: Sub AddHighScore(entity As HighScoreEntity)
+  overload: SortGarbage.Persistence.Repositories.IHighScoreRepository.AddHighScore*
+references:
+- uid: SortGarbage.Persistence.Repositories
+  commentId: N:SortGarbage.Persistence.Repositories
+  name: SortGarbage.Persistence.Repositories
+  nameWithType: SortGarbage.Persistence.Repositories
+  fullName: SortGarbage.Persistence.Repositories
+- uid: SortGarbage.Persistence.Repositories.IHighScoreRepository.GetHighScores*
+  commentId: Overload:SortGarbage.Persistence.Repositories.IHighScoreRepository.GetHighScores
+  name: GetHighScores
+  nameWithType: IHighScoreRepository.GetHighScores
+  fullName: SortGarbage.Persistence.Repositories.IHighScoreRepository.GetHighScores
+- uid: System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity}
+  commentId: T:System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<HighScoreEntity>
+  nameWithType: List<HighScoreEntity>
+  fullName: System.Collections.Generic.List<SortGarbage.Models.Entities.HighScoreEntity>
+  nameWithType.vb: List(Of HighScoreEntity)
+  fullName.vb: System.Collections.Generic.List(Of SortGarbage.Models.Entities.HighScoreEntity)
+  name.vb: List(Of HighScoreEntity)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SortGarbage.Models.Entities.HighScoreEntity
+    name: HighScoreEntity
+    nameWithType: HighScoreEntity
+    fullName: SortGarbage.Models.Entities.HighScoreEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SortGarbage.Models.Entities.HighScoreEntity
+    name: HighScoreEntity
+    nameWithType: HighScoreEntity
+    fullName: SortGarbage.Models.Entities.HighScoreEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SortGarbage.Persistence.Repositories.IHighScoreRepository.AddHighScore*
+  commentId: Overload:SortGarbage.Persistence.Repositories.IHighScoreRepository.AddHighScore
+  name: AddHighScore
+  nameWithType: IHighScoreRepository.AddHighScore
+  fullName: SortGarbage.Persistence.Repositories.IHighScoreRepository.AddHighScore
+- uid: SortGarbage.Models.Entities.HighScoreEntity
+  commentId: T:SortGarbage.Models.Entities.HighScoreEntity
+  parent: SortGarbage.Models.Entities
+  name: HighScoreEntity
+  nameWithType: HighScoreEntity
+  fullName: SortGarbage.Models.Entities.HighScoreEntity
+- uid: SortGarbage.Models.Entities
+  commentId: N:SortGarbage.Models.Entities
+  name: SortGarbage.Models.Entities
+  nameWithType: SortGarbage.Models.Entities
+  fullName: SortGarbage.Models.Entities

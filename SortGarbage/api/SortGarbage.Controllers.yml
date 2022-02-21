@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Controllers
+  commentId: N:SortGarbage.Controllers
+  id: SortGarbage.Controllers
+  children:
+  - SortGarbage.Controllers.GameController
+  - SortGarbage.Controllers.HighScoresController
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Controllers
+  nameWithType: SortGarbage.Controllers
+  fullName: SortGarbage.Controllers
+  type: Namespace
+  assemblies:
+  - SortGarbage
+references:
+- uid: SortGarbage.Controllers.GameController
+  commentId: T:SortGarbage.Controllers.GameController
+  name: GameController
+  nameWithType: GameController
+  fullName: SortGarbage.Controllers.GameController
+- uid: SortGarbage.Controllers.HighScoresController
+  commentId: T:SortGarbage.Controllers.HighScoresController
+  name: HighScoresController
+  nameWithType: HighScoresController
+  fullName: SortGarbage.Controllers.HighScoresController

@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Controllers.GameController
+  commentId: T:SortGarbage.Controllers.GameController
+  id: GameController
+  parent: SortGarbage.Controllers
+  children:
+  - SortGarbage.Controllers.GameController.#ctor(SortGarbage.Views.Interfaces.IGameView)
+  - SortGarbage.Controllers.GameController.AssignNewGarbage(SortGarbage.Views.CustomControls.GarbageButton@)
+  - SortGarbage.Controllers.GameController.OnContainerSelected(SortGarbage.Models.GameModels.Garbage,System.Drawing.Point)
+  - SortGarbage.Controllers.GameController.OnGameFinished
+  - SortGarbage.Controllers.GameController.StartGame
+  langs:
+  - csharp
+  - vb
+  name: GameController
+  nameWithType: GameController
+  fullName: SortGarbage.Controllers.GameController
+  type: Class
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/GameController.cs
+    id: GameController
+    path: Controllers/GameController.cs
+    startLine: 17
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nKlasa sluzy do kontroli przebiegu gry\n"
+  example: []
+  syntax:
+    content: public class GameController
+    content.vb: Public Class GameController
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SortGarbage.Controllers.GameController.#ctor(SortGarbage.Views.Interfaces.IGameView)
+  commentId: M:SortGarbage.Controllers.GameController.#ctor(SortGarbage.Views.Interfaces.IGameView)
+  id: '#ctor(SortGarbage.Views.Interfaces.IGameView)'
+  parent: SortGarbage.Controllers.GameController
+  langs:
+  - csharp
+  - vb
+  name: GameController(IGameView)
+  nameWithType: GameController.GameController(IGameView)
+  fullName: SortGarbage.Controllers.GameController.GameController(SortGarbage.Views.Interfaces.IGameView)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/GameController.cs
+    id: .ctor
+    path: Controllers/GameController.cs
+    startLine: 29
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nKonstruktor klasy\n"
+  example: []
+  syntax:
+    content: public GameController(IGameView gameView)
+    parameters:
+    - id: gameView
+      type: SortGarbage.Views.Interfaces.IGameView
+      description: Interfejs widoku przebiegu gry
+    content.vb: Public Sub New(gameView As IGameView)
+  overload: SortGarbage.Controllers.GameController.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Controllers.GameController.StartGame
+  commentId: M:SortGarbage.Controllers.GameController.StartGame
+  id: StartGame
+  parent: SortGarbage.Controllers.GameController
+  langs:
+  - csharp
+  - vb
+  name: StartGame()
+  nameWithType: GameController.StartGame()
+  fullName: SortGarbage.Controllers.GameController.StartGame()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/GameController.cs
+    id: StartGame
+    path: Controllers/GameController.cs
+    startLine: 38
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nTworzy nowa instancje gry\n"
+  example: []
+  syntax:
+    content: public void StartGame()
+    content.vb: Public Sub StartGame
+  overload: SortGarbage.Controllers.GameController.StartGame*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Controllers.GameController.OnContainerSelected(SortGarbage.Models.GameModels.Garbage,System.Drawing.Point)
+  commentId: M:SortGarbage.Controllers.GameController.OnContainerSelected(SortGarbage.Models.GameModels.Garbage,System.Drawing.Point)
+  id: OnContainerSelected(SortGarbage.Models.GameModels.Garbage,System.Drawing.Point)
+  parent: SortGarbage.Controllers.GameController
+  langs:
+  - csharp
+  - vb
+  name: OnContainerSelected(Garbage, Point)
+  nameWithType: GameController.OnContainerSelected(Garbage, Point)
+  fullName: SortGarbage.Controllers.GameController.OnContainerSelected(SortGarbage.Models.GameModels.Garbage, System.Drawing.Point)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/GameController.cs
+    id: OnContainerSelected
+    path: Controllers/GameController.cs
+    startLine: 49
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nMetoda wywoływana w przypadku wybrania kontenera na smieci\n"
+  example: []
+  syntax:
+    content: public bool OnContainerSelected(Garbage garbage, Point point)
+    parameters:
+    - id: garbage
+      type: SortGarbage.Models.GameModels.Garbage
+      description: Wrzucany smiec
+    - id: point
+      type: System.Drawing.Point
+      description: Punkt dotkniecia
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function OnContainerSelected(garbage As Garbage, point As Point) As Boolean
+  overload: SortGarbage.Controllers.GameController.OnContainerSelected*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Controllers.GameController.OnGameFinished
+  commentId: M:SortGarbage.Controllers.GameController.OnGameFinished
+  id: OnGameFinished
+  parent: SortGarbage.Controllers.GameController
+  langs:
+  - csharp
+  - vb
+  name: OnGameFinished()
+  nameWithType: GameController.OnGameFinished()
+  fullName: SortGarbage.Controllers.GameController.OnGameFinished()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/GameController.cs
+    id: OnGameFinished
+    path: Controllers/GameController.cs
+    startLine: 66
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nMetoda wywołujaca zakonczenie gry\n"
+  example: []
+  syntax:
+    content: public void OnGameFinished()
+    content.vb: Public Sub OnGameFinished
+  overload: SortGarbage.Controllers.GameController.OnGameFinished*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Controllers.GameController.AssignNewGarbage(SortGarbage.Views.CustomControls.GarbageButton@)
+  commentId: M:SortGarbage.Controllers.GameController.AssignNewGarbage(SortGarbage.Views.CustomControls.GarbageButton@)
+  id: AssignNewGarbage(SortGarbage.Views.CustomControls.GarbageButton@)
+  parent: SortGarbage.Controllers.GameController
+  langs:
+  - csharp
+  - vb
+  name: AssignNewGarbage(ref GarbageButton)
+  nameWithType: GameController.AssignNewGarbage(ref GarbageButton)
+  fullName: SortGarbage.Controllers.GameController.AssignNewGarbage(ref SortGarbage.Views.CustomControls.GarbageButton)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/GameController.cs
+    id: AssignNewGarbage
+    path: Controllers/GameController.cs
+    startLine: 82
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nMetoda generyjaca smieci na ekranie\n"
+  example: []
+  syntax:
+    content: public void AssignNewGarbage(ref GarbageButton garbageButton)
+    parameters:
+    - id: garbageButton
+      type: SortGarbage.Views.CustomControls.GarbageButton
+      description: Obiekt smiecia
+    content.vb: Public Sub AssignNewGarbage(ByRef garbageButton As GarbageButton)
+  overload: SortGarbage.Controllers.GameController.AssignNewGarbage*
+  nameWithType.vb: GameController.AssignNewGarbage(ByRef GarbageButton)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SortGarbage.Controllers.GameController.AssignNewGarbage(ByRef SortGarbage.Views.CustomControls.GarbageButton)
+  name.vb: AssignNewGarbage(ByRef GarbageButton)
+references:
+- uid: SortGarbage.Controllers
+  commentId: N:SortGarbage.Controllers
+  name: SortGarbage.Controllers
+  nameWithType: SortGarbage.Controllers
+  fullName: SortGarbage.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SortGarbage.Controllers.GameController.#ctor*
+  commentId: Overload:SortGarbage.Controllers.GameController.#ctor
+  name: GameController
+  nameWithType: GameController.GameController
+  fullName: SortGarbage.Controllers.GameController.GameController
+- uid: SortGarbage.Views.Interfaces.IGameView
+  commentId: T:SortGarbage.Views.Interfaces.IGameView
+  parent: SortGarbage.Views.Interfaces
+  name: IGameView
+  nameWithType: IGameView
+  fullName: SortGarbage.Views.Interfaces.IGameView
+- uid: SortGarbage.Views.Interfaces
+  commentId: N:SortGarbage.Views.Interfaces
+  name: SortGarbage.Views.Interfaces
+  nameWithType: SortGarbage.Views.Interfaces
+  fullName: SortGarbage.Views.Interfaces
+- uid: SortGarbage.Controllers.GameController.StartGame*
+  commentId: Overload:SortGarbage.Controllers.GameController.StartGame
+  name: StartGame
+  nameWithType: GameController.StartGame
+  fullName: SortGarbage.Controllers.GameController.StartGame
+- uid: SortGarbage.Controllers.GameController.OnContainerSelected*
+  commentId: Overload:SortGarbage.Controllers.GameController.OnContainerSelected
+  name: OnContainerSelected
+  nameWithType: GameController.OnContainerSelected
+  fullName: SortGarbage.Controllers.GameController.OnContainerSelected
+- uid: SortGarbage.Models.GameModels.Garbage
+  commentId: T:SortGarbage.Models.GameModels.Garbage
+  parent: SortGarbage.Models.GameModels
+  name: Garbage
+  nameWithType: Garbage
+  fullName: SortGarbage.Models.GameModels.Garbage
+- uid: System.Drawing.Point
+  commentId: T:System.Drawing.Point
+  parent: System.Drawing
+  isExternal: true
+  name: Point
+  nameWithType: Point
+  fullName: System.Drawing.Point
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: SortGarbage.Models.GameModels
+  commentId: N:SortGarbage.Models.GameModels
+  name: SortGarbage.Models.GameModels
+  nameWithType: SortGarbage.Models.GameModels
+  fullName: SortGarbage.Models.GameModels
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+- uid: SortGarbage.Controllers.GameController.OnGameFinished*
+  commentId: Overload:SortGarbage.Controllers.GameController.OnGameFinished
+  name: OnGameFinished
+  nameWithType: GameController.OnGameFinished
+  fullName: SortGarbage.Controllers.GameController.OnGameFinished
+- uid: SortGarbage.Controllers.GameController.AssignNewGarbage*
+  commentId: Overload:SortGarbage.Controllers.GameController.AssignNewGarbage
+  name: AssignNewGarbage
+  nameWithType: GameController.AssignNewGarbage
+  fullName: SortGarbage.Controllers.GameController.AssignNewGarbage
+- uid: SortGarbage.Views.CustomControls.GarbageButton
+  commentId: T:SortGarbage.Views.CustomControls.GarbageButton
+  parent: SortGarbage.Views.CustomControls
+  name: GarbageButton
+  nameWithType: GarbageButton
+  fullName: SortGarbage.Views.CustomControls.GarbageButton
+- uid: SortGarbage.Views.CustomControls
+  commentId: N:SortGarbage.Views.CustomControls
+  name: SortGarbage.Views.CustomControls
+  nameWithType: SortGarbage.Views.CustomControls
+  fullName: SortGarbage.Views.CustomControls

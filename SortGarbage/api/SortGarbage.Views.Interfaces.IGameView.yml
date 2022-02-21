@@ -1,0 +1,316 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Views.Interfaces.IGameView
+  commentId: T:SortGarbage.Views.Interfaces.IGameView
+  id: IGameView
+  parent: SortGarbage.Views.Interfaces
+  children:
+  - SortGarbage.Views.Interfaces.IGameView.containerPictureBoxes
+  - SortGarbage.Views.Interfaces.IGameView.FinishGame(SortGarbage.Models.GameModels.FinalScore)
+  - SortGarbage.Views.Interfaces.IGameView.Refresh
+  - SortGarbage.Views.Interfaces.IGameView.UpdateMoveCounter(System.Int32)
+  - SortGarbage.Views.Interfaces.IGameView.UpdateScore(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IGameView
+  nameWithType: IGameView
+  fullName: SortGarbage.Views.Interfaces.IGameView
+  type: Interface
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IGameView.cs
+    id: IGameView
+    path: Views/Interfaces/IGameView.cs
+    startLine: 13
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  summary: "\nInterfejs do okienka gry\n"
+  example: []
+  syntax:
+    content: public interface IGameView
+    content.vb: Public Interface IGameView
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: SortGarbage.Views.Interfaces.IGameView.containerPictureBoxes
+  commentId: P:SortGarbage.Views.Interfaces.IGameView.containerPictureBoxes
+  id: containerPictureBoxes
+  parent: SortGarbage.Views.Interfaces.IGameView
+  langs:
+  - csharp
+  - vb
+  name: containerPictureBoxes
+  nameWithType: IGameView.containerPictureBoxes
+  fullName: SortGarbage.Views.Interfaces.IGameView.containerPictureBoxes
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IGameView.cs
+    id: containerPictureBoxes
+    path: Views/Interfaces/IGameView.cs
+    startLine: 15
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  syntax:
+    content: List<ContainerPictureBox> containerPictureBoxes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{SortGarbage.Views.CustomControls.ContainerPictureBox}
+    content.vb: Property containerPictureBoxes As List(Of ContainerPictureBox)
+  overload: SortGarbage.Views.Interfaces.IGameView.containerPictureBoxes*
+  modifiers.csharp:
+  - get
+  - set
+- uid: SortGarbage.Views.Interfaces.IGameView.Refresh
+  commentId: M:SortGarbage.Views.Interfaces.IGameView.Refresh
+  id: Refresh
+  parent: SortGarbage.Views.Interfaces.IGameView
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: IGameView.Refresh()
+  fullName: SortGarbage.Views.Interfaces.IGameView.Refresh()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IGameView.cs
+    id: Refresh
+    path: Views/Interfaces/IGameView.cs
+    startLine: 16
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  syntax:
+    content: void Refresh()
+    content.vb: Sub Refresh
+  overload: SortGarbage.Views.Interfaces.IGameView.Refresh*
+- uid: SortGarbage.Views.Interfaces.IGameView.UpdateScore(System.Int32)
+  commentId: M:SortGarbage.Views.Interfaces.IGameView.UpdateScore(System.Int32)
+  id: UpdateScore(System.Int32)
+  parent: SortGarbage.Views.Interfaces.IGameView
+  langs:
+  - csharp
+  - vb
+  name: UpdateScore(Int32)
+  nameWithType: IGameView.UpdateScore(Int32)
+  fullName: SortGarbage.Views.Interfaces.IGameView.UpdateScore(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IGameView.cs
+    id: UpdateScore
+    path: Views/Interfaces/IGameView.cs
+    startLine: 18
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  syntax:
+    content: void UpdateScore(int score)
+    parameters:
+    - id: score
+      type: System.Int32
+    content.vb: Sub UpdateScore(score As Integer)
+  overload: SortGarbage.Views.Interfaces.IGameView.UpdateScore*
+- uid: SortGarbage.Views.Interfaces.IGameView.FinishGame(SortGarbage.Models.GameModels.FinalScore)
+  commentId: M:SortGarbage.Views.Interfaces.IGameView.FinishGame(SortGarbage.Models.GameModels.FinalScore)
+  id: FinishGame(SortGarbage.Models.GameModels.FinalScore)
+  parent: SortGarbage.Views.Interfaces.IGameView
+  langs:
+  - csharp
+  - vb
+  name: FinishGame(FinalScore)
+  nameWithType: IGameView.FinishGame(FinalScore)
+  fullName: SortGarbage.Views.Interfaces.IGameView.FinishGame(SortGarbage.Models.GameModels.FinalScore)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IGameView.cs
+    id: FinishGame
+    path: Views/Interfaces/IGameView.cs
+    startLine: 20
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  syntax:
+    content: void FinishGame(FinalScore finalScore)
+    parameters:
+    - id: finalScore
+      type: SortGarbage.Models.GameModels.FinalScore
+    content.vb: Sub FinishGame(finalScore As FinalScore)
+  overload: SortGarbage.Views.Interfaces.IGameView.FinishGame*
+- uid: SortGarbage.Views.Interfaces.IGameView.UpdateMoveCounter(System.Int32)
+  commentId: M:SortGarbage.Views.Interfaces.IGameView.UpdateMoveCounter(System.Int32)
+  id: UpdateMoveCounter(System.Int32)
+  parent: SortGarbage.Views.Interfaces.IGameView
+  langs:
+  - csharp
+  - vb
+  name: UpdateMoveCounter(Int32)
+  nameWithType: IGameView.UpdateMoveCounter(Int32)
+  fullName: SortGarbage.Views.Interfaces.IGameView.UpdateMoveCounter(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IGameView.cs
+    id: UpdateMoveCounter
+    path: Views/Interfaces/IGameView.cs
+    startLine: 21
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  syntax:
+    content: void UpdateMoveCounter(int moveCounter)
+    parameters:
+    - id: moveCounter
+      type: System.Int32
+    content.vb: Sub UpdateMoveCounter(moveCounter As Integer)
+  overload: SortGarbage.Views.Interfaces.IGameView.UpdateMoveCounter*
+references:
+- uid: SortGarbage.Views.Interfaces
+  commentId: N:SortGarbage.Views.Interfaces
+  name: SortGarbage.Views.Interfaces
+  nameWithType: SortGarbage.Views.Interfaces
+  fullName: SortGarbage.Views.Interfaces
+- uid: SortGarbage.Views.Interfaces.IGameView.containerPictureBoxes*
+  commentId: Overload:SortGarbage.Views.Interfaces.IGameView.containerPictureBoxes
+  name: containerPictureBoxes
+  nameWithType: IGameView.containerPictureBoxes
+  fullName: SortGarbage.Views.Interfaces.IGameView.containerPictureBoxes
+- uid: System.Collections.Generic.List{SortGarbage.Views.CustomControls.ContainerPictureBox}
+  commentId: T:System.Collections.Generic.List{SortGarbage.Views.CustomControls.ContainerPictureBox}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ContainerPictureBox>
+  nameWithType: List<ContainerPictureBox>
+  fullName: System.Collections.Generic.List<SortGarbage.Views.CustomControls.ContainerPictureBox>
+  nameWithType.vb: List(Of ContainerPictureBox)
+  fullName.vb: System.Collections.Generic.List(Of SortGarbage.Views.CustomControls.ContainerPictureBox)
+  name.vb: List(Of ContainerPictureBox)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SortGarbage.Views.CustomControls.ContainerPictureBox
+    name: ContainerPictureBox
+    nameWithType: ContainerPictureBox
+    fullName: SortGarbage.Views.CustomControls.ContainerPictureBox
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SortGarbage.Views.CustomControls.ContainerPictureBox
+    name: ContainerPictureBox
+    nameWithType: ContainerPictureBox
+    fullName: SortGarbage.Views.CustomControls.ContainerPictureBox
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SortGarbage.Views.Interfaces.IGameView.Refresh*
+  commentId: Overload:SortGarbage.Views.Interfaces.IGameView.Refresh
+  name: Refresh
+  nameWithType: IGameView.Refresh
+  fullName: SortGarbage.Views.Interfaces.IGameView.Refresh
+- uid: SortGarbage.Views.Interfaces.IGameView.UpdateScore*
+  commentId: Overload:SortGarbage.Views.Interfaces.IGameView.UpdateScore
+  name: UpdateScore
+  nameWithType: IGameView.UpdateScore
+  fullName: SortGarbage.Views.Interfaces.IGameView.UpdateScore
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SortGarbage.Views.Interfaces.IGameView.FinishGame*
+  commentId: Overload:SortGarbage.Views.Interfaces.IGameView.FinishGame
+  name: FinishGame
+  nameWithType: IGameView.FinishGame
+  fullName: SortGarbage.Views.Interfaces.IGameView.FinishGame
+- uid: SortGarbage.Models.GameModels.FinalScore
+  commentId: T:SortGarbage.Models.GameModels.FinalScore
+  parent: SortGarbage.Models.GameModels
+  name: FinalScore
+  nameWithType: FinalScore
+  fullName: SortGarbage.Models.GameModels.FinalScore
+- uid: SortGarbage.Models.GameModels
+  commentId: N:SortGarbage.Models.GameModels
+  name: SortGarbage.Models.GameModels
+  nameWithType: SortGarbage.Models.GameModels
+  fullName: SortGarbage.Models.GameModels
+- uid: SortGarbage.Views.Interfaces.IGameView.UpdateMoveCounter*
+  commentId: Overload:SortGarbage.Views.Interfaces.IGameView.UpdateMoveCounter
+  name: UpdateMoveCounter
+  nameWithType: IGameView.UpdateMoveCounter
+  fullName: SortGarbage.Views.Interfaces.IGameView.UpdateMoveCounter

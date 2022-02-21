@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Models.Enums.GarbageType
+  commentId: T:SortGarbage.Models.Enums.GarbageType
+  id: GarbageType
+  parent: SortGarbage.Models.Enums
+  children:
+  - SortGarbage.Models.Enums.GarbageType.Bio
+  - SortGarbage.Models.Enums.GarbageType.Glass
+  - SortGarbage.Models.Enums.GarbageType.Paper
+  - SortGarbage.Models.Enums.GarbageType.Plastic
+  langs:
+  - csharp
+  - vb
+  name: GarbageType
+  nameWithType: GarbageType
+  fullName: SortGarbage.Models.Enums.GarbageType
+  type: Enum
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/Enums/GarbageType.cs
+    id: GarbageType
+    path: ../SortGarbage.Models/Enums/GarbageType.cs
+    startLine: 5
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.Enums
+  summary: "\nEnumerator porzadkujacy typy smieci\n"
+  example: []
+  syntax:
+    content: public enum GarbageType
+    content.vb: Public Enum GarbageType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: SortGarbage.Models.Enums.GarbageType.Plastic
+  commentId: F:SortGarbage.Models.Enums.GarbageType.Plastic
+  id: Plastic
+  parent: SortGarbage.Models.Enums.GarbageType
+  langs:
+  - csharp
+  - vb
+  name: Plastic
+  nameWithType: GarbageType.Plastic
+  fullName: SortGarbage.Models.Enums.GarbageType.Plastic
+  type: Field
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/Enums/GarbageType.cs
+    id: Plastic
+    path: ../SortGarbage.Models/Enums/GarbageType.cs
+    startLine: 7
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.Enums
+  syntax:
+    content: Plastic = 1
+    return:
+      type: SortGarbage.Models.Enums.GarbageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SortGarbage.Models.Enums.GarbageType.Paper
+  commentId: F:SortGarbage.Models.Enums.GarbageType.Paper
+  id: Paper
+  parent: SortGarbage.Models.Enums.GarbageType
+  langs:
+  - csharp
+  - vb
+  name: Paper
+  nameWithType: GarbageType.Paper
+  fullName: SortGarbage.Models.Enums.GarbageType.Paper
+  type: Field
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/Enums/GarbageType.cs
+    id: Paper
+    path: ../SortGarbage.Models/Enums/GarbageType.cs
+    startLine: 8
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.Enums
+  syntax:
+    content: Paper = 2
+    return:
+      type: SortGarbage.Models.Enums.GarbageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SortGarbage.Models.Enums.GarbageType.Glass
+  commentId: F:SortGarbage.Models.Enums.GarbageType.Glass
+  id: Glass
+  parent: SortGarbage.Models.Enums.GarbageType
+  langs:
+  - csharp
+  - vb
+  name: Glass
+  nameWithType: GarbageType.Glass
+  fullName: SortGarbage.Models.Enums.GarbageType.Glass
+  type: Field
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/Enums/GarbageType.cs
+    id: Glass
+    path: ../SortGarbage.Models/Enums/GarbageType.cs
+    startLine: 9
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.Enums
+  syntax:
+    content: Glass = 3
+    return:
+      type: SortGarbage.Models.Enums.GarbageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SortGarbage.Models.Enums.GarbageType.Bio
+  commentId: F:SortGarbage.Models.Enums.GarbageType.Bio
+  id: Bio
+  parent: SortGarbage.Models.Enums.GarbageType
+  langs:
+  - csharp
+  - vb
+  name: Bio
+  nameWithType: GarbageType.Bio
+  fullName: SortGarbage.Models.Enums.GarbageType.Bio
+  type: Field
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/Enums/GarbageType.cs
+    id: Bio
+    path: ../SortGarbage.Models/Enums/GarbageType.cs
+    startLine: 10
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.Enums
+  syntax:
+    content: Bio = 4
+    return:
+      type: SortGarbage.Models.Enums.GarbageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: SortGarbage.Models.Enums
+  commentId: N:SortGarbage.Models.Enums
+  name: SortGarbage.Models.Enums
+  nameWithType: SortGarbage.Models.Enums
+  fullName: SortGarbage.Models.Enums
+- uid: SortGarbage.Models.Enums.GarbageType
+  commentId: T:SortGarbage.Models.Enums.GarbageType
+  parent: SortGarbage.Models.Enums
+  name: GarbageType
+  nameWithType: GarbageType
+  fullName: SortGarbage.Models.Enums.GarbageType

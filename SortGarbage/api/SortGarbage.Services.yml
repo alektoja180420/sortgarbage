@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Services
+  commentId: N:SortGarbage.Services
+  id: SortGarbage.Services
+  children:
+  - SortGarbage.Services.HighScoreService
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Services
+  nameWithType: SortGarbage.Services
+  fullName: SortGarbage.Services
+  type: Namespace
+  assemblies:
+  - SortGarbage.Services
+references:
+- uid: SortGarbage.Services.HighScoreService
+  commentId: T:SortGarbage.Services.HighScoreService
+  name: HighScoreService
+  nameWithType: HighScoreService
+  fullName: SortGarbage.Services.HighScoreService

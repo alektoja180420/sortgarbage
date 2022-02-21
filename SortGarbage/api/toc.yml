@@ -1,0 +1,76 @@
+### YamlMime:TableOfContent
+- uid: SortGarbage
+  name: SortGarbage
+  items:
+  - uid: SortGarbage.Main
+    name: Main
+- uid: SortGarbage.Controllers
+  name: SortGarbage.Controllers
+  items:
+  - uid: SortGarbage.Controllers.GameController
+    name: GameController
+  - uid: SortGarbage.Controllers.HighScoresController
+    name: HighScoresController
+- uid: SortGarbage.Models.Entities
+  name: SortGarbage.Models.Entities
+  items:
+  - uid: SortGarbage.Models.Entities.HighScoreEntity
+    name: HighScoreEntity
+- uid: SortGarbage.Models.Enums
+  name: SortGarbage.Models.Enums
+  items:
+  - uid: SortGarbage.Models.Enums.GarbageType
+    name: GarbageType
+- uid: SortGarbage.Models.GameModels
+  name: SortGarbage.Models.GameModels
+  items:
+  - uid: SortGarbage.Models.GameModels.FinalScore
+    name: FinalScore
+  - uid: SortGarbage.Models.GameModels.GameProgress
+    name: GameProgress
+  - uid: SortGarbage.Models.GameModels.Garbage
+    name: Garbage
+- uid: SortGarbage.Persistence.Repositories
+  name: SortGarbage.Persistence.Repositories
+  items:
+  - uid: SortGarbage.Persistence.Repositories.GarbageRepository
+    name: GarbageRepository
+  - uid: SortGarbage.Persistence.Repositories.HighScoresRepository
+    name: HighScoresRepository
+  - uid: SortGarbage.Persistence.Repositories.IHighScoreRepository
+    name: IHighScoreRepository
+- uid: SortGarbage.Services
+  name: SortGarbage.Services
+  items:
+  - uid: SortGarbage.Services.HighScoreService
+    name: HighScoreService
+- uid: SortGarbage.Views
+  name: SortGarbage.Views
+  items:
+  - uid: SortGarbage.Views.GameView
+    name: GameView
+  - uid: SortGarbage.Views.HighScoresView
+    name: HighScoresView
+- uid: SortGarbage.Views.CustomControls
+  name: SortGarbage.Views.CustomControls
+  items:
+  - uid: SortGarbage.Views.CustomControls.ContainerPictureBox
+    name: ContainerPictureBox
+  - uid: SortGarbage.Views.CustomControls.GarbageButton
+    name: GarbageButton
+- uid: SortGarbage.Views.Dialogs
+  name: SortGarbage.Views.Dialogs
+  items:
+  - uid: SortGarbage.Views.Dialogs.ScoreDialog
+    name: ScoreDialog
+  - uid: SortGarbage.Views.Dialogs.UsernameDialog
+    name: UsernameDialog
+- uid: SortGarbage.Views.Interfaces
+  name: SortGarbage.Views.Interfaces
+  items:
+  - uid: SortGarbage.Views.Interfaces.IGameView
+    name: IGameView
+  - uid: SortGarbage.Views.Interfaces.IHighScoresView
+    name: IHighScoresView
+  - uid: SortGarbage.Views.Interfaces.IMainMenuView
+    name: IMainMenuView

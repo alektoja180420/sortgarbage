@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Views.Interfaces.IHighScoresView
+  commentId: T:SortGarbage.Views.Interfaces.IHighScoresView
+  id: IHighScoresView
+  parent: SortGarbage.Views.Interfaces
+  children:
+  - SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores(System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity})
+  langs:
+  - csharp
+  - vb
+  name: IHighScoresView
+  nameWithType: IHighScoresView
+  fullName: SortGarbage.Views.Interfaces.IHighScoresView
+  type: Interface
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IHighScoresView.cs
+    id: IHighScoresView
+    path: Views/Interfaces/IHighScoresView.cs
+    startLine: 12
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  summary: "\nInterfejs do okienka wynikow\n"
+  example: []
+  syntax:
+    content: public interface IHighScoresView
+    content.vb: Public Interface IHighScoresView
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores(System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity})
+  commentId: M:SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores(System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity})
+  id: AttachHighScores(System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity})
+  parent: SortGarbage.Views.Interfaces.IHighScoresView
+  langs:
+  - csharp
+  - vb
+  name: AttachHighScores(List<HighScoreEntity>)
+  nameWithType: IHighScoresView.AttachHighScores(List<HighScoreEntity>)
+  fullName: SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores(System.Collections.Generic.List<SortGarbage.Models.Entities.HighScoreEntity>)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Views/Interfaces/IHighScoresView.cs
+    id: AttachHighScores
+    path: Views/Interfaces/IHighScoresView.cs
+    startLine: 14
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Views.Interfaces
+  syntax:
+    content: void AttachHighScores(List<HighScoreEntity> highScores)
+    parameters:
+    - id: highScores
+      type: System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity}
+    content.vb: Sub AttachHighScores(highScores As List(Of HighScoreEntity))
+  overload: SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores*
+  nameWithType.vb: IHighScoresView.AttachHighScores(List(Of HighScoreEntity))
+  fullName.vb: SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores(System.Collections.Generic.List(Of SortGarbage.Models.Entities.HighScoreEntity))
+  name.vb: AttachHighScores(List(Of HighScoreEntity))
+references:
+- uid: SortGarbage.Views.Interfaces
+  commentId: N:SortGarbage.Views.Interfaces
+  name: SortGarbage.Views.Interfaces
+  nameWithType: SortGarbage.Views.Interfaces
+  fullName: SortGarbage.Views.Interfaces
+- uid: SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores*
+  commentId: Overload:SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores
+  name: AttachHighScores
+  nameWithType: IHighScoresView.AttachHighScores
+  fullName: SortGarbage.Views.Interfaces.IHighScoresView.AttachHighScores
+- uid: System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity}
+  commentId: T:System.Collections.Generic.List{SortGarbage.Models.Entities.HighScoreEntity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<HighScoreEntity>
+  nameWithType: List<HighScoreEntity>
+  fullName: System.Collections.Generic.List<SortGarbage.Models.Entities.HighScoreEntity>
+  nameWithType.vb: List(Of HighScoreEntity)
+  fullName.vb: System.Collections.Generic.List(Of SortGarbage.Models.Entities.HighScoreEntity)
+  name.vb: List(Of HighScoreEntity)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SortGarbage.Models.Entities.HighScoreEntity
+    name: HighScoreEntity
+    nameWithType: HighScoreEntity
+    fullName: SortGarbage.Models.Entities.HighScoreEntity
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SortGarbage.Models.Entities.HighScoreEntity
+    name: HighScoreEntity
+    nameWithType: HighScoreEntity
+    fullName: SortGarbage.Models.Entities.HighScoreEntity
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

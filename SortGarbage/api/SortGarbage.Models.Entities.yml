@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Models.Entities
+  commentId: N:SortGarbage.Models.Entities
+  id: SortGarbage.Models.Entities
+  children:
+  - SortGarbage.Models.Entities.HighScoreEntity
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Models.Entities
+  nameWithType: SortGarbage.Models.Entities
+  fullName: SortGarbage.Models.Entities
+  type: Namespace
+  assemblies:
+  - SortGarbage.Models
+references:
+- uid: SortGarbage.Models.Entities.HighScoreEntity
+  commentId: T:SortGarbage.Models.Entities.HighScoreEntity
+  parent: SortGarbage.Models.Entities
+  name: HighScoreEntity
+  nameWithType: HighScoreEntity
+  fullName: SortGarbage.Models.Entities.HighScoreEntity
+- uid: SortGarbage.Models.Entities
+  commentId: N:SortGarbage.Models.Entities
+  name: SortGarbage.Models.Entities
+  nameWithType: SortGarbage.Models.Entities
+  fullName: SortGarbage.Models.Entities

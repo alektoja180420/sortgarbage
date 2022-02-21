@@ -1,7 +1,223 @@
 [
   {
-    "Path": "Images\\Bio\\zrobione\\banan.jpg",
+    "Path": "Images\\Bio\\zrobione\\banan.png",
     "GarbageName": "Banan",
     "GarbageType": 4
+  },
+  {
+    "Path": "Images\\Bio\\zrobione\\galaz.png",
+    "GarbageName": "Galaz",
+    "GarbageType": 4
+  },
+  {
+    "Path": "Images\\Bio\\zrobione\\jablko.png",
+    "GarbageName": "Jablko",
+    "GarbageType": 4
+  },
+  {
+    "Path": "Images\\Bio\\zrobione\\jajo.png",
+    "GarbageName": "Jajko",
+    "GarbageType": 4
+  },
+  {
+    "Path": "Images\\Bio\\zrobione\\lisc.png",
+    "GarbageName": "Lisc",
+    "GarbageType": 4
+  },
+  {
+    "Path": "Images\\Bio\\zrobione\\marchewa.png",
+    "GarbageName": "Marchewka",
+    "GarbageType": 4
+  },
+  {
+    "Path": "Images\\Bio\\zrobione\\orzech.png",
+    "GarbageName": "Orzech",
+    "GarbageType": 4
+  },
+
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\butelka.png",
+    "GarbageName": "Butelka",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\butlametal.png",
+    "GarbageName": "Butla",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\jakiesnarzedzie.png",
+    "GarbageName": "Narzedzie",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\kapselpiwo.png",
+    "GarbageName": "Kapsel",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\mefa.png",
+    "GarbageName": "Woreczek",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\mlekokarton.png",
+    "GarbageName": "Karton",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\narzedzie2.png",
+    "GarbageName": "Narzedzie2",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\pucha.png",
+    "GarbageName": "Puszka",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\puszka.png",
+    "GarbageName": "Puszka",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\worki.png",
+    "GarbageName": "Worki",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\zabawkametal.png",
+    "GarbageName": "Zabawka",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\zakretka.png",
+    "GarbageName": "Zakretka",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\zakretka2.png",
+    "GarbageName": "Zakretka2",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\zakretkasloik.png",
+    "GarbageName": "Zakretka3",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Metal_plastik\\zrobione\\zgniecionabutla.png",
+    "GarbageName": "Butelka2",
+    "GarbageType": 1
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\czasopismo.png",
+    "GarbageName": "Czasopismo",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\gazeta.png",
+    "GarbageName": "Gazeta",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\koperta.png",
+    "GarbageName": "Koperta",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\ksiazka.png",
+    "GarbageName": "Ksiazka",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\ksiegabrzydka.png",
+    "GarbageName": "Ksiega",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\kupa.png",
+    "GarbageName": "Rulon",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\pakowy.png",
+    "GarbageName": "Papier1",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\pudelko.png",
+    "GarbageName": "Pudelko",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\pudelko2.png",
+    "GarbageName": "Pudelko2",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\sracz.png",
+    "GarbageName": "Rulon1",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\troba.png",
+    "GarbageName": "Torba",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Papier\\zrobione\\zeszyt.png",
+    "GarbageName": "Zeszyt",
+    "GarbageType": 2
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\bitmapa.png",
+    "GarbageName": "Sloik",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\butla1.png",
+    "GarbageName": "Butla1",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\butla2.png",
+    "GarbageName": "Butla2",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\butla3.png",
+    "GarbageName": "Butla3",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\butlamala.png",
+    "GarbageName": "Buteleczka",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\image817.png",
+    "GarbageName": "Butelka1",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\kosm2.png",
+    "GarbageName": "Lekarstwo",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\kosmetyk.png",
+    "GarbageName": "Perfumy",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\piwo.png",
+    "GarbageName": "Piwo",
+    "GarbageType": 3
+  },
+  {
+    "Path": "Images\\Szklo\\zrobione\\sloik.png",
+    "GarbageName": "Sloik1",
+    "GarbageType": 3
   }
 ]

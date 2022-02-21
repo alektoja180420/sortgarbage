@@ -5,16 +5,13 @@ using SortGarbage.Views.Dialogs;
 using SortGarbage.Views.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SortGarbage.Views
 {
+    /// <summary>
+    /// Okienko gry
+    /// </summary>
     public partial class GameView : Form, IGameView
     {
         private GameController gameController;
@@ -23,12 +20,16 @@ namespace SortGarbage.Views
         private ContainerPictureBox paperPictureBox;
         private ContainerPictureBox plasticPictureBox;
         private string playerName;
-
-        private List<ContainerPictureBox> containers;
-        private List<GarbageButton> garbageButtons;
-
-        public List<ContainerPictureBox> containerPictureBoxes { get { return containers; } set { this.containerPictureBoxes = value; } }
-
+        private List<ContainerPictureBox> containers; 
+        
+        /// <summary>
+        /// Kontenery na smieci
+        /// </summary>
+        public List<ContainerPictureBox> containerPictureBoxes { get { return containers; } set { containerPictureBoxes = value; } }
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="playerName">Nazwa gracza</param>
         public GameView(string playerName)
         {
             InitializeComponent();
@@ -36,36 +37,49 @@ namespace SortGarbage.Views
             gameController = new GameController(this);
             InitializePictureBoxes();
         }
-
+        /// <summary>
+        /// Metoda odswiezajaca obrazki smieci
+        /// </summary>
+        public override void Refresh()
+        {
+            base.Refresh();
+            Invalidate();
+        }
+        /// <summary>
+        /// Metoda uaktualniajaca wynik
+        /// </summary>
+        /// <param name="score">Wynik</param>
+        public void UpdateScore(int score)
+        {
+            scoreLabel.Text = $"Score: {score}";
+        }
+        /// <summary>
+        /// Metoda konczaca gre
+        /// </summary>
+        /// <param name="finalScore">Wynik koncowy</param>
+        public void FinishGame(FinalScore finalScore)
+        {
+            var scoreDialog = new ScoreDialog(finalScore, playerName);
+            scoreDialog.Show();
+            Close();
+        }
+        /// <summary>
+        /// Metoda uaktualniajaca ilosc ruchow
+        /// </summary>
+        /// <param name="moveCounter">Liczba ruchow</param>
+        public void UpdateMoveCounter(int moveCounter)
+        {
+            movesLabel.Text = $"Ruchy: {moveCounter}";
+        }
         private void GameView_Load(object sender, EventArgs e)
         {
             gameController.StartGame();
             userNameLabel.Text = playerName;
-        }
-
-        private void GlassButton_Click(object sender, EventArgs e)
-        {
-            var garbage = new Garbage
-            {
-                GarbageName = "Butla specka",
-                GarbageType = Models.Enums.GarbageType.Glass
-            };
-
-            if (glassPictureBox.IsValidContainer(garbage))
-            {
-                gameController.OnProperContainerSelected();
-            }
-            else
-            {
-                gameController.OnWrongContainerSelected();
-            }
-
-            //MessageBox.Show
-        }
-
-        private void PaperButton_Click(object sender, EventArgs e)
-        {
-
+            gameController.AssignNewGarbage(ref garbageButton1);
+            gameController.AssignNewGarbage(ref garbageButton2);
+            gameController.AssignNewGarbage(ref garbageButton3);
+            gameController.AssignNewGarbage(ref garbageButton4);
+            gameController.AssignNewGarbage(ref garbageButton5);
         }
 
         private void InitializePictureBoxes()
@@ -83,77 +97,62 @@ namespace SortGarbage.Views
             containers.Add(plasticPictureBox);
         }
 
-        private void garbageButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public void ShowDummyDialog(string message)
-        {
-            MessageBox.Show(message);
-        }
-
-        private void garbageButton1_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(garbageButton1.Location);
-        }
-
-        private void BioContainerPictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PaperContainerPictureBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void garbageButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void garbageButton2_MouseUp(object sender, MouseEventArgs e)
-        {
-            gameController.OnContainerSelected(garbageButton2.Location);
-        }
-
-        private void scoreLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public void UpdateScore(int score)
-        {
-            scoreLabel.Text = $"Score: {score}";
-        }
-
         private void EndGameButton_Click(object sender, EventArgs e)
         {
             gameController.OnGameFinished();
         }
 
-        public void FinishGame(FinalScore finalScore)
+        private void PerformActionWhenContainerSelected(GarbageButton button, bool properContainerSelected)
         {
-            var scoreDialog = new ScoreDialog(finalScore, playerName);
-            scoreDialog.Show();
-            Close();
+            if (properContainerSelected)
+            {
+                RefreshButton(button);
+            }
+            else
+            {
+                BackButton(button);
+            }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void RefreshButton(GarbageButton button)
         {
-
+            gameController.AssignNewGarbage(ref button);
+            BackButton(button);
         }
 
-        public void UpdateMoveCounter(int moveCounter)
+        private void BackButton(GarbageButton button)
         {
-            movesLabel.Text = $"Ruchy: {moveCounter}";
+            button.Location = button.DefaultLocation;
         }
 
-        private void CreateGarbageButtons()
+        private void garbageButton1_MouseUp(object sender, MouseEventArgs e)
         {
-            var garbageButton = new GarbageButton();
-            this.Controls.Add(garbageButton);
+            var containerSelected = gameController.OnContainerSelected(garbageButton1.AssignedGarbage, garbageButton1.Location);
+            PerformActionWhenContainerSelected(garbageButton1, containerSelected);
+        }
+
+        private void garbageButton2_MouseUp(object sender, MouseEventArgs e)
+        {
+            var containerSelected = gameController.OnContainerSelected(garbageButton2.AssignedGarbage, garbageButton2.Location);
+            PerformActionWhenContainerSelected(garbageButton2, containerSelected);
+        }
+
+        private void garbageButton3_MouseUp(object sender, MouseEventArgs e)
+        {
+            var containerSelected = gameController.OnContainerSelected(garbageButton3.AssignedGarbage, garbageButton3.Location);
+            PerformActionWhenContainerSelected(garbageButton3, containerSelected);
+        }
+
+        private void garbageButton4_MouseUp(object sender, MouseEventArgs e)
+        {
+            var containerSelected = gameController.OnContainerSelected(garbageButton4.AssignedGarbage, garbageButton4.Location);
+            PerformActionWhenContainerSelected(garbageButton4, containerSelected);
+        }
+
+        private void garbageButton5_MouseUp(object sender, MouseEventArgs e)
+        {
+            var containerSelected = gameController.OnContainerSelected(garbageButton5.AssignedGarbage, garbageButton5.Location);
+            PerformActionWhenContainerSelected(garbageButton5, containerSelected);
         }
     }
 }

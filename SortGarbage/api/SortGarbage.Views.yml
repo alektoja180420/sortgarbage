@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Views
+  commentId: N:SortGarbage.Views
+  id: SortGarbage.Views
+  children:
+  - SortGarbage.Views.GameView
+  - SortGarbage.Views.HighScoresView
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Views
+  nameWithType: SortGarbage.Views
+  fullName: SortGarbage.Views
+  type: Namespace
+  assemblies:
+  - SortGarbage
+references:
+- uid: SortGarbage.Views.GameView
+  commentId: T:SortGarbage.Views.GameView
+  name: GameView
+  nameWithType: GameView
+  fullName: SortGarbage.Views.GameView
+- uid: SortGarbage.Views.HighScoresView
+  commentId: T:SortGarbage.Views.HighScoresView
+  name: HighScoresView
+  nameWithType: HighScoresView
+  fullName: SortGarbage.Views.HighScoresView

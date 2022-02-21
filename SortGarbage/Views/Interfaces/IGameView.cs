@@ -8,10 +8,13 @@ using System.Threading.Tasks;
 
 namespace SortGarbage.Views.Interfaces
 {
+    /// <summary>
+    /// Interfejs do okienka gry
+    /// </summary>
     public interface IGameView
     {
         List<ContainerPictureBox> containerPictureBoxes { get; set; }
-        void ShowDummyDialog(string message);
+        void Refresh();
 
         void UpdateScore(int score);
 

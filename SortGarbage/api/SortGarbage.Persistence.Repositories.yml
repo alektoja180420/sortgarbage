@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Persistence.Repositories
+  commentId: N:SortGarbage.Persistence.Repositories
+  id: SortGarbage.Persistence.Repositories
+  children:
+  - SortGarbage.Persistence.Repositories.GarbageRepository
+  - SortGarbage.Persistence.Repositories.HighScoresRepository
+  - SortGarbage.Persistence.Repositories.IHighScoreRepository
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Persistence.Repositories
+  nameWithType: SortGarbage.Persistence.Repositories
+  fullName: SortGarbage.Persistence.Repositories
+  type: Namespace
+  assemblies:
+  - SortGarbage.Persistence
+references:
+- uid: SortGarbage.Persistence.Repositories.GarbageRepository
+  commentId: T:SortGarbage.Persistence.Repositories.GarbageRepository
+  name: GarbageRepository
+  nameWithType: GarbageRepository
+  fullName: SortGarbage.Persistence.Repositories.GarbageRepository
+- uid: SortGarbage.Persistence.Repositories.HighScoresRepository
+  commentId: T:SortGarbage.Persistence.Repositories.HighScoresRepository
+  name: HighScoresRepository
+  nameWithType: HighScoresRepository
+  fullName: SortGarbage.Persistence.Repositories.HighScoresRepository
+- uid: SortGarbage.Persistence.Repositories.IHighScoreRepository
+  commentId: T:SortGarbage.Persistence.Repositories.IHighScoreRepository
+  parent: SortGarbage.Persistence.Repositories
+  name: IHighScoreRepository
+  nameWithType: IHighScoreRepository
+  fullName: SortGarbage.Persistence.Repositories.IHighScoreRepository
+- uid: SortGarbage.Persistence.Repositories
+  commentId: N:SortGarbage.Persistence.Repositories
+  name: SortGarbage.Persistence.Repositories
+  nameWithType: SortGarbage.Persistence.Repositories
+  fullName: SortGarbage.Persistence.Repositories

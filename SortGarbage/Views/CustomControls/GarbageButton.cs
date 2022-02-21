@@ -2,6 +2,7 @@
 using SortGarbage.Persistence.Repositories;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -11,38 +12,63 @@ using System.Windows.Forms;
 
 namespace SortGarbage.Views.CustomControls
 {
+    /// <summary>
+    /// Klasa opisujaca pojawiajace sie smieci na ekranie
+    /// </summary>
     public class GarbageButton : Button
     {
+        #nullable enable
+        /// <summary>
+        /// Parametr smiecia przypisanego do elementu
+        /// </summary>
+        public Garbage? AssignedGarbage { get; set; } = null;
+        /// <summary>
+        /// Parametr domyslnej lokalizacji elementu
+        /// </summary>
+        public Point DefaultLocation { get; set; }
         private bool isSomethingDragged = false;
         private Point ptOffset;
-        
-        /* private Garbage _garbage;
-        private GarbageRepository garbageRepository;*/
-
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
         public GarbageButton() : base()
+        {
+            FlatStyle = FlatStyle.Flat;
+            TabStop = false;
+            FlatAppearance.BorderSize = 0;
+            Text = "";
+        }
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="assignedGarbage">przypisywany smiec</param>
+        public GarbageButton(Garbage? assignedGarbage = null) : base()
         {
             //FitImageSize();
             FlatStyle = FlatStyle.Flat;
             TabStop = false;
             FlatAppearance.BorderSize = 0;
             Text = "";
-            //AssignBackgroundImage();
-            //_garbage = new Garbage() { GarbageType = GarbageTy}
+            AssignedGarbage = assignedGarbage;
+            AssignBackgroundImage();
         }
-
-        private void FitImageSize()
+        /// <summary>
+        /// Metoda ktora przypisuje smiec po wrzuceniu go do kosza
+        /// </summary>
+        public void OnGarbageReassigned()
         {
-            if(this.BackgroundImage == null) { return; }
-            var picture = new Bitmap(this.BackgroundImage, new Size(this.Width, this.Height));
-            this.BackgroundImage = picture;
+            AssignBackgroundImage();
         }
-
+      
         private void AssignBackgroundImage()
         {
-            var garbageRepository = new GarbageRepository();
-            var _garbage = garbageRepository.GetRandomGarbage();
-            /*var bitmap = Bitmap.FromFile(_garbage.Path);
-            BackgroundImage = (Image)bitmap; */
+            if(AssignedGarbage is null)
+            {
+                return;
+            }
+
+            BackgroundImage = Image.FromFile(AssignedGarbage.Path);
+            Invalidate();
         }
 
         protected override void OnMouseMove(MouseEventArgs mevent)
@@ -62,7 +88,7 @@ namespace SortGarbage.Views.CustomControls
             base.OnMouseClick(e);
             if (e.Button == MouseButtons.Left)
             {
-                //button2.DoDragDrop(this.button2, DragDropEffects.Move);
+                
                 isSomethingDragged = true;
                 Point ptStartPosition = PointToScreen(new Point(e.X, e.Y));
                 ptOffset = new Point();
@@ -79,19 +105,7 @@ namespace SortGarbage.Views.CustomControls
         {
             base.OnMouseUp(mevent);
             isSomethingDragged=false;
-            //OnDraggedToBasket
-
         }
 
-        private void OnDraggedToBasket(List<ContainerPictureBox> containers, Point point)
-        {
-            foreach (var container in containers)
-            {
-                if (container.ElementTouchedContainer(point))
-                {
-                    MessageBox.Show("dotkło");
-                }
-            }
-        }
     }
 }

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage
+  commentId: N:SortGarbage
+  id: SortGarbage
+  children:
+  - SortGarbage.Main
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage
+  nameWithType: SortGarbage
+  fullName: SortGarbage
+  type: Namespace
+  assemblies:
+  - SortGarbage
+references:
+- uid: SortGarbage.Main
+  commentId: T:SortGarbage.Main
+  name: Main
+  nameWithType: Main
+  fullName: SortGarbage.Main

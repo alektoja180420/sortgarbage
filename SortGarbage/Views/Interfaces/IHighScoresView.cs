@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace SortGarbage.Views.Interfaces
 {
+    /// <summary>
+    /// Interfejs do okienka wynikow
+    /// </summary>
     public interface IHighScoresView
     {
         public void AttachHighScores(List<HighScoreEntity> highScores);

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Models.Enums
+  commentId: N:SortGarbage.Models.Enums
+  id: SortGarbage.Models.Enums
+  children:
+  - SortGarbage.Models.Enums.GarbageType
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Models.Enums
+  nameWithType: SortGarbage.Models.Enums
+  fullName: SortGarbage.Models.Enums
+  type: Namespace
+  assemblies:
+  - SortGarbage.Models
+references:
+- uid: SortGarbage.Models.Enums.GarbageType
+  commentId: T:SortGarbage.Models.Enums.GarbageType
+  parent: SortGarbage.Models.Enums
+  name: GarbageType
+  nameWithType: GarbageType
+  fullName: SortGarbage.Models.Enums.GarbageType
+- uid: SortGarbage.Models.Enums
+  commentId: N:SortGarbage.Models.Enums
+  name: SortGarbage.Models.Enums
+  nameWithType: SortGarbage.Models.Enums
+  fullName: SortGarbage.Models.Enums

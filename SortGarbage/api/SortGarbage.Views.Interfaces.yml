@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Views.Interfaces
+  commentId: N:SortGarbage.Views.Interfaces
+  id: SortGarbage.Views.Interfaces
+  children:
+  - SortGarbage.Views.Interfaces.IGameView
+  - SortGarbage.Views.Interfaces.IHighScoresView
+  - SortGarbage.Views.Interfaces.IMainMenuView
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Views.Interfaces
+  nameWithType: SortGarbage.Views.Interfaces
+  fullName: SortGarbage.Views.Interfaces
+  type: Namespace
+  assemblies:
+  - SortGarbage
+references:
+- uid: SortGarbage.Views.Interfaces.IGameView
+  commentId: T:SortGarbage.Views.Interfaces.IGameView
+  parent: SortGarbage.Views.Interfaces
+  name: IGameView
+  nameWithType: IGameView
+  fullName: SortGarbage.Views.Interfaces.IGameView
+- uid: SortGarbage.Views.Interfaces.IHighScoresView
+  commentId: T:SortGarbage.Views.Interfaces.IHighScoresView
+  parent: SortGarbage.Views.Interfaces
+  name: IHighScoresView
+  nameWithType: IHighScoresView
+  fullName: SortGarbage.Views.Interfaces.IHighScoresView
+- uid: SortGarbage.Views.Interfaces.IMainMenuView
+  commentId: T:SortGarbage.Views.Interfaces.IMainMenuView
+  parent: SortGarbage.Views.Interfaces
+  name: IMainMenuView
+  nameWithType: IMainMenuView
+  fullName: SortGarbage.Views.Interfaces.IMainMenuView
+- uid: SortGarbage.Views.Interfaces
+  commentId: N:SortGarbage.Views.Interfaces
+  name: SortGarbage.Views.Interfaces
+  nameWithType: SortGarbage.Views.Interfaces
+  fullName: SortGarbage.Views.Interfaces

@@ -36,20 +36,22 @@ namespace SortGarbage.Views.Dialogs
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(134, 126);
+            this.button1.Location = new System.Drawing.Point(191, 210);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 36);
+            this.button1.Size = new System.Drawing.Size(186, 60);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Potwierdz";
+            this.button1.Text = "Potwierdź";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UsernameTextbox
             // 
             this.UsernameTextbox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UsernameTextbox.Location = new System.Drawing.Point(134, 69);
+            this.UsernameTextbox.Location = new System.Drawing.Point(191, 115);
+            this.UsernameTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.UsernameTextbox.Name = "UsernameTextbox";
-            this.UsernameTextbox.Size = new System.Drawing.Size(130, 35);
+            this.UsernameTextbox.Size = new System.Drawing.Size(184, 49);
             this.UsernameTextbox.TabIndex = 1;
             this.UsernameTextbox.TextChanged += new System.EventHandler(this.UsernameTextbox_TextChanged);
             // 
@@ -57,20 +59,22 @@ namespace SortGarbage.Views.Dialogs
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(113, 18);
+            this.label1.Location = new System.Drawing.Point(161, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 32);
+            this.label1.Size = new System.Drawing.Size(270, 48);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Wpisz swoj nick";
+            this.label1.Text = "Wpisz swój nick";
             // 
             // UsernameDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 174);
+            this.ClientSize = new System.Drawing.Size(560, 290);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.UsernameTextbox);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UsernameDialog";
             this.Text = "UsernameDialog";
             this.ResumeLayout(false);

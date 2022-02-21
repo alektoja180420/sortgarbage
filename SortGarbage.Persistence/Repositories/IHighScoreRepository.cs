@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace SortGarbage.Persistence.Repositories
 {
+    /// <summary>
+    /// Interfejs repozytorium
+    /// </summary>
     public interface IHighScoreRepository
     {
         public List<HighScoreEntity> GetHighScores();

@@ -1,5 +1,8 @@
 ﻿namespace SortGarbage.Models.Enums
 {
+    /// <summary>
+    /// Enumerator porzadkujacy typy smieci
+    /// </summary>
     public enum GarbageType
     {
         Plastic = 1,

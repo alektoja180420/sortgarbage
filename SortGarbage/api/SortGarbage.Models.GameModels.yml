@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Models.GameModels
+  commentId: N:SortGarbage.Models.GameModels
+  id: SortGarbage.Models.GameModels
+  children:
+  - SortGarbage.Models.GameModels.FinalScore
+  - SortGarbage.Models.GameModels.GameProgress
+  - SortGarbage.Models.GameModels.Garbage
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Models.GameModels
+  nameWithType: SortGarbage.Models.GameModels
+  fullName: SortGarbage.Models.GameModels
+  type: Namespace
+  assemblies:
+  - SortGarbage.Models
+references:
+- uid: SortGarbage.Models.GameModels.FinalScore
+  commentId: T:SortGarbage.Models.GameModels.FinalScore
+  parent: SortGarbage.Models.GameModels
+  name: FinalScore
+  nameWithType: FinalScore
+  fullName: SortGarbage.Models.GameModels.FinalScore
+- uid: SortGarbage.Models.GameModels.GameProgress
+  commentId: T:SortGarbage.Models.GameModels.GameProgress
+  name: GameProgress
+  nameWithType: GameProgress
+  fullName: SortGarbage.Models.GameModels.GameProgress
+- uid: SortGarbage.Models.GameModels.Garbage
+  commentId: T:SortGarbage.Models.GameModels.Garbage
+  parent: SortGarbage.Models.GameModels
+  name: Garbage
+  nameWithType: Garbage
+  fullName: SortGarbage.Models.GameModels.Garbage
+- uid: SortGarbage.Models.GameModels
+  commentId: N:SortGarbage.Models.GameModels
+  name: SortGarbage.Models.GameModels
+  nameWithType: SortGarbage.Models.GameModels
+  fullName: SortGarbage.Models.GameModels

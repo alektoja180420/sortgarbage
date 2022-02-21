@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Views.CustomControls
+  commentId: N:SortGarbage.Views.CustomControls
+  id: SortGarbage.Views.CustomControls
+  children:
+  - SortGarbage.Views.CustomControls.ContainerPictureBox
+  - SortGarbage.Views.CustomControls.GarbageButton
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Views.CustomControls
+  nameWithType: SortGarbage.Views.CustomControls
+  fullName: SortGarbage.Views.CustomControls
+  type: Namespace
+  assemblies:
+  - SortGarbage
+references:
+- uid: SortGarbage.Views.CustomControls.ContainerPictureBox
+  commentId: T:SortGarbage.Views.CustomControls.ContainerPictureBox
+  name: ContainerPictureBox
+  nameWithType: ContainerPictureBox
+  fullName: SortGarbage.Views.CustomControls.ContainerPictureBox
+- uid: SortGarbage.Views.CustomControls.GarbageButton
+  commentId: T:SortGarbage.Views.CustomControls.GarbageButton
+  parent: SortGarbage.Views.CustomControls
+  name: GarbageButton
+  nameWithType: GarbageButton
+  fullName: SortGarbage.Views.CustomControls.GarbageButton
+- uid: SortGarbage.Views.CustomControls
+  commentId: N:SortGarbage.Views.CustomControls
+  name: SortGarbage.Views.CustomControls
+  nameWithType: SortGarbage.Views.CustomControls
+  fullName: SortGarbage.Views.CustomControls

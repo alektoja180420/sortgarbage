@@ -29,76 +29,83 @@ namespace SortGarbage
         /// </summary>
         private void InitializeComponent()
         {
-            this.TitleLabel = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.ButtonStartGame = new System.Windows.Forms.Button();
             this.ButtonScores = new System.Windows.Forms.Button();
             this.ButtonEndGame = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // TitleLabel
-            // 
-            this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TitleLabel.Location = new System.Drawing.Point(268, 18);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(278, 45);
-            this.TitleLabel.TabIndex = 0;
-            this.TitleLabel.Text = "Sortowanie smieci";
-            this.TitleLabel.Click += new System.EventHandler(this.TitleLabel_Click);
             // 
             // ButtonStartGame
             // 
-            this.ButtonStartGame.Location = new System.Drawing.Point(325, 94);
+            this.ButtonStartGame.Location = new System.Drawing.Point(464, 157);
+            this.ButtonStartGame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonStartGame.Name = "ButtonStartGame";
-            this.ButtonStartGame.Size = new System.Drawing.Size(151, 72);
+            this.ButtonStartGame.Size = new System.Drawing.Size(216, 120);
             this.ButtonStartGame.TabIndex = 1;
-            this.ButtonStartGame.Text = "Rozpocznij Gre";
+            this.ButtonStartGame.Text = "Rozpocznij gre";
             this.ButtonStartGame.UseVisualStyleBackColor = true;
             this.ButtonStartGame.Click += new System.EventHandler(this.ButtonStartGame_Click);
             // 
             // ButtonScores
             // 
-            this.ButtonScores.Location = new System.Drawing.Point(325, 189);
+            this.ButtonScores.Location = new System.Drawing.Point(464, 315);
+            this.ButtonScores.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonScores.Name = "ButtonScores";
-            this.ButtonScores.Size = new System.Drawing.Size(151, 73);
+            this.ButtonScores.Size = new System.Drawing.Size(216, 122);
             this.ButtonScores.TabIndex = 2;
-            this.ButtonScores.Text = "Historia wynikow";
+            this.ButtonScores.Text = "Historia wyników";
             this.ButtonScores.UseVisualStyleBackColor = true;
             this.ButtonScores.Click += new System.EventHandler(this.ButtonScores_Click);
             // 
             // ButtonEndGame
             // 
-            this.ButtonEndGame.Location = new System.Drawing.Point(325, 290);
+            this.ButtonEndGame.Location = new System.Drawing.Point(464, 483);
+            this.ButtonEndGame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonEndGame.Name = "ButtonEndGame";
-            this.ButtonEndGame.Size = new System.Drawing.Size(151, 73);
+            this.ButtonEndGame.Size = new System.Drawing.Size(216, 122);
             this.ButtonEndGame.TabIndex = 3;
-            this.ButtonEndGame.Text = "Zakoncz gre";
+            this.ButtonEndGame.Text = "Zakończ gre";
             this.ButtonEndGame.UseVisualStyleBackColor = true;
             this.ButtonEndGame.Click += new System.EventHandler(this.ButtonEndGame_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(373, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(429, 75);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1143, 750);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ButtonEndGame);
             this.Controls.Add(this.ButtonScores);
             this.Controls.Add(this.ButtonStartGame);
-            this.Controls.Add(this.TitleLabel);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Main";
             this.Text = "Sortowanie smieci";
             this.Load += new System.EventHandler(this.Main_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.Button ButtonStartGame;
         private System.Windows.Forms.Button ButtonScores;
         private System.Windows.Forms.Button ButtonEndGame;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Views.Dialogs
+  commentId: N:SortGarbage.Views.Dialogs
+  id: SortGarbage.Views.Dialogs
+  children:
+  - SortGarbage.Views.Dialogs.ScoreDialog
+  - SortGarbage.Views.Dialogs.UsernameDialog
+  langs:
+  - csharp
+  - vb
+  name: SortGarbage.Views.Dialogs
+  nameWithType: SortGarbage.Views.Dialogs
+  fullName: SortGarbage.Views.Dialogs
+  type: Namespace
+  assemblies:
+  - SortGarbage
+references:
+- uid: SortGarbage.Views.Dialogs.ScoreDialog
+  commentId: T:SortGarbage.Views.Dialogs.ScoreDialog
+  name: ScoreDialog
+  nameWithType: ScoreDialog
+  fullName: SortGarbage.Views.Dialogs.ScoreDialog
+- uid: SortGarbage.Views.Dialogs.UsernameDialog
+  commentId: T:SortGarbage.Views.Dialogs.UsernameDialog
+  name: UsernameDialog
+  nameWithType: UsernameDialog
+  fullName: SortGarbage.Views.Dialogs.UsernameDialog

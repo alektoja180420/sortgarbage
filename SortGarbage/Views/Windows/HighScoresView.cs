@@ -13,28 +13,33 @@ using System.Windows.Forms;
 
 namespace SortGarbage.Views
 {
+    /// <summary>
+    /// Okienko najlepszych wynikow
+    /// </summary>
     public partial class HighScoresView : Form, IHighScoresView
     {
         private HighScoresController _highScoresController;
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
         public HighScoresView()
         {
             InitializeComponent();
             _highScoresController = new HighScoresController(this);
         }
-
+        /// <summary>
+        /// Metoda wyswietlajaca wyniki
+        /// </summary>
+        /// <param name="highScores">Wynik</param>
         public void AttachHighScores(List<HighScoreEntity> highScores)
         {
             dataGridView1.DataSource = highScores;
         }
-
+       
         private void HighScoresView_Load(object sender, EventArgs e)
         {
             _highScoresController.PopulateHighScores();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

@@ -1,0 +1,858 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Models.GameModels.GameProgress
+  commentId: T:SortGarbage.Models.GameModels.GameProgress
+  id: GameProgress
+  parent: SortGarbage.Models.GameModels
+  children:
+  - SortGarbage.Models.GameModels.GameProgress.#ctor
+  - SortGarbage.Models.GameModels.GameProgress.#ctor(System.String)
+  - SortGarbage.Models.GameModels.GameProgress.DateEnd
+  - SortGarbage.Models.GameModels.GameProgress.DateStart
+  - SortGarbage.Models.GameModels.GameProgress.DecreaseScore(System.Int32)
+  - SortGarbage.Models.GameModels.GameProgress.GetGameTime
+  - SortGarbage.Models.GameModels.GameProgress.Id
+  - SortGarbage.Models.GameModels.GameProgress.IncreaseMoveCounter
+  - SortGarbage.Models.GameModels.GameProgress.IncreaseScore(System.Int32)
+  - SortGarbage.Models.GameModels.GameProgress.MovesCounter
+  - SortGarbage.Models.GameModels.GameProgress.Player
+  - SortGarbage.Models.GameModels.GameProgress.TotalScore
+  langs:
+  - csharp
+  - vb
+  name: GameProgress
+  nameWithType: GameProgress
+  fullName: SortGarbage.Models.GameModels.GameProgress
+  type: Class
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: GameProgress
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 11
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nModel, ktory gromadzi dane z przebiegu gry\n"
+  example: []
+  syntax:
+    content: public class GameProgress
+    content.vb: Public Class GameProgress
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SortGarbage.Models.GameModels.GameProgress.Id
+  commentId: P:SortGarbage.Models.GameModels.GameProgress.Id
+  id: Id
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: GameProgress.Id
+  fullName: SortGarbage.Models.GameModels.GameProgress.Id
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: Id
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 16
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nIdentyfikator\n"
+  example: []
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: SortGarbage.Models.GameModels.GameProgress.Id*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.Player
+  commentId: P:SortGarbage.Models.GameModels.GameProgress.Player
+  id: Player
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: Player
+  nameWithType: GameProgress.Player
+  fullName: SortGarbage.Models.GameModels.GameProgress.Player
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: Player
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 20
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nNazwa gracza\n"
+  example: []
+  syntax:
+    content: public string Player { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Player As String
+  overload: SortGarbage.Models.GameModels.GameProgress.Player*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.TotalScore
+  commentId: P:SortGarbage.Models.GameModels.GameProgress.TotalScore
+  id: TotalScore
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: TotalScore
+  nameWithType: GameProgress.TotalScore
+  fullName: SortGarbage.Models.GameModels.GameProgress.TotalScore
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: TotalScore
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 24
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nAktualny wynik gracza\n"
+  example: []
+  syntax:
+    content: public int TotalScore { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TotalScore As Integer
+  overload: SortGarbage.Models.GameModels.GameProgress.TotalScore*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.MovesCounter
+  commentId: P:SortGarbage.Models.GameModels.GameProgress.MovesCounter
+  id: MovesCounter
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: MovesCounter
+  nameWithType: GameProgress.MovesCounter
+  fullName: SortGarbage.Models.GameModels.GameProgress.MovesCounter
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: MovesCounter
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 28
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nAktualna liczba ruchow\n"
+  example: []
+  syntax:
+    content: public int MovesCounter { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MovesCounter As Integer
+  overload: SortGarbage.Models.GameModels.GameProgress.MovesCounter*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.DateStart
+  commentId: P:SortGarbage.Models.GameModels.GameProgress.DateStart
+  id: DateStart
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: DateStart
+  nameWithType: GameProgress.DateStart
+  fullName: SortGarbage.Models.GameModels.GameProgress.DateStart
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: DateStart
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 32
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nGodzina rozpocecia gry\n"
+  example: []
+  syntax:
+    content: public DateTime DateStart { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DateStart As Date
+  overload: SortGarbage.Models.GameModels.GameProgress.DateStart*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.DateEnd
+  commentId: P:SortGarbage.Models.GameModels.GameProgress.DateEnd
+  id: DateEnd
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: DateEnd
+  nameWithType: GameProgress.DateEnd
+  fullName: SortGarbage.Models.GameModels.GameProgress.DateEnd
+  type: Property
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: DateEnd
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 36
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nGodzina zakonczenia gry\n"
+  example: []
+  syntax:
+    content: public DateTime DateEnd { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property DateEnd As Date
+  overload: SortGarbage.Models.GameModels.GameProgress.DateEnd*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.#ctor
+  commentId: M:SortGarbage.Models.GameModels.GameProgress.#ctor
+  id: '#ctor'
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: GameProgress()
+  nameWithType: GameProgress.GameProgress()
+  fullName: SortGarbage.Models.GameModels.GameProgress.GameProgress()
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: .ctor
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 41
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nKonstruktor\n"
+  example: []
+  syntax:
+    content: public GameProgress()
+    content.vb: Public Sub New
+  overload: SortGarbage.Models.GameModels.GameProgress.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.#ctor(System.String)
+  commentId: M:SortGarbage.Models.GameModels.GameProgress.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: GameProgress(String)
+  nameWithType: GameProgress.GameProgress(String)
+  fullName: SortGarbage.Models.GameModels.GameProgress.GameProgress(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: .ctor
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 50
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nKonstruktor\n"
+  example: []
+  syntax:
+    content: public GameProgress(string player)
+    parameters:
+    - id: player
+      type: System.String
+      description: Nazwa gracza
+    content.vb: Public Sub New(player As String)
+  overload: SortGarbage.Models.GameModels.GameProgress.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.IncreaseScore(System.Int32)
+  commentId: M:SortGarbage.Models.GameModels.GameProgress.IncreaseScore(System.Int32)
+  id: IncreaseScore(System.Int32)
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: IncreaseScore(Int32)
+  nameWithType: GameProgress.IncreaseScore(Int32)
+  fullName: SortGarbage.Models.GameModels.GameProgress.IncreaseScore(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: IncreaseScore
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 60
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nMetoda zwiekszajaca wynik\n"
+  example: []
+  syntax:
+    content: public int IncreaseScore(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: Wartosc o ile zwiekszyc wynik
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function IncreaseScore(value As Integer) As Integer
+  overload: SortGarbage.Models.GameModels.GameProgress.IncreaseScore*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.DecreaseScore(System.Int32)
+  commentId: M:SortGarbage.Models.GameModels.GameProgress.DecreaseScore(System.Int32)
+  id: DecreaseScore(System.Int32)
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: DecreaseScore(Int32)
+  nameWithType: GameProgress.DecreaseScore(Int32)
+  fullName: SortGarbage.Models.GameModels.GameProgress.DecreaseScore(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: DecreaseScore
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 70
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nMetoda zmniejszaca wynik\n"
+  example: []
+  syntax:
+    content: public int DecreaseScore(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: Wartosc o ile zmniejszyc wynik
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function DecreaseScore(value As Integer) As Integer
+  overload: SortGarbage.Models.GameModels.GameProgress.DecreaseScore*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.IncreaseMoveCounter
+  commentId: M:SortGarbage.Models.GameModels.GameProgress.IncreaseMoveCounter
+  id: IncreaseMoveCounter
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: IncreaseMoveCounter()
+  nameWithType: GameProgress.IncreaseMoveCounter()
+  fullName: SortGarbage.Models.GameModels.GameProgress.IncreaseMoveCounter()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: IncreaseMoveCounter
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 79
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nMetoda zwiekszajaca ilosc ruchow\n"
+  example: []
+  syntax:
+    content: public int IncreaseMoveCounter()
+    return:
+      type: System.Int32
+      description: Zwraca ilosc ruchow powiekszona o jeden
+    content.vb: Public Function IncreaseMoveCounter As Integer
+  overload: SortGarbage.Models.GameModels.GameProgress.IncreaseMoveCounter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Models.GameModels.GameProgress.GetGameTime
+  commentId: M:SortGarbage.Models.GameModels.GameProgress.GetGameTime
+  id: GetGameTime
+  parent: SortGarbage.Models.GameModels.GameProgress
+  langs:
+  - csharp
+  - vb
+  name: GetGameTime()
+  nameWithType: GameProgress.GetGameTime()
+  fullName: SortGarbage.Models.GameModels.GameProgress.GetGameTime()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage.Models/GameModels/GameProgress.cs
+    id: GetGameTime
+    path: ../SortGarbage.Models/GameModels/GameProgress.cs
+    startLine: 87
+  assemblies:
+  - SortGarbage.Models
+  namespace: SortGarbage.Models.GameModels
+  summary: "\nMetoda zwracajaca czas gry\n"
+  example: []
+  syntax:
+    content: public long GetGameTime()
+    return:
+      type: System.Int64
+      description: Zwraca koncowy czas gry w ms
+    content.vb: Public Function GetGameTime As Long
+  overload: SortGarbage.Models.GameModels.GameProgress.GetGameTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SortGarbage.Models.GameModels
+  commentId: N:SortGarbage.Models.GameModels
+  name: SortGarbage.Models.GameModels
+  nameWithType: SortGarbage.Models.GameModels
+  fullName: SortGarbage.Models.GameModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SortGarbage.Models.GameModels.GameProgress.Id*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.Id
+  name: Id
+  nameWithType: GameProgress.Id
+  fullName: SortGarbage.Models.GameModels.GameProgress.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: SortGarbage.Models.GameModels.GameProgress.Player*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.Player
+  name: Player
+  nameWithType: GameProgress.Player
+  fullName: SortGarbage.Models.GameModels.GameProgress.Player
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SortGarbage.Models.GameModels.GameProgress.TotalScore*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.TotalScore
+  name: TotalScore
+  nameWithType: GameProgress.TotalScore
+  fullName: SortGarbage.Models.GameModels.GameProgress.TotalScore
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SortGarbage.Models.GameModels.GameProgress.MovesCounter*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.MovesCounter
+  name: MovesCounter
+  nameWithType: GameProgress.MovesCounter
+  fullName: SortGarbage.Models.GameModels.GameProgress.MovesCounter
+- uid: SortGarbage.Models.GameModels.GameProgress.DateStart*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.DateStart
+  name: DateStart
+  nameWithType: GameProgress.DateStart
+  fullName: SortGarbage.Models.GameModels.GameProgress.DateStart
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: SortGarbage.Models.GameModels.GameProgress.DateEnd*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.DateEnd
+  name: DateEnd
+  nameWithType: GameProgress.DateEnd
+  fullName: SortGarbage.Models.GameModels.GameProgress.DateEnd
+- uid: SortGarbage.Models.GameModels.GameProgress.#ctor*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.#ctor
+  name: GameProgress
+  nameWithType: GameProgress.GameProgress
+  fullName: SortGarbage.Models.GameModels.GameProgress.GameProgress
+- uid: SortGarbage.Models.GameModels.GameProgress.IncreaseScore*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.IncreaseScore
+  name: IncreaseScore
+  nameWithType: GameProgress.IncreaseScore
+  fullName: SortGarbage.Models.GameModels.GameProgress.IncreaseScore
+- uid: SortGarbage.Models.GameModels.GameProgress.DecreaseScore*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.DecreaseScore
+  name: DecreaseScore
+  nameWithType: GameProgress.DecreaseScore
+  fullName: SortGarbage.Models.GameModels.GameProgress.DecreaseScore
+- uid: SortGarbage.Models.GameModels.GameProgress.IncreaseMoveCounter*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.IncreaseMoveCounter
+  name: IncreaseMoveCounter
+  nameWithType: GameProgress.IncreaseMoveCounter
+  fullName: SortGarbage.Models.GameModels.GameProgress.IncreaseMoveCounter
+- uid: SortGarbage.Models.GameModels.GameProgress.GetGameTime*
+  commentId: Overload:SortGarbage.Models.GameModels.GameProgress.GetGameTime
+  name: GetGameTime
+  nameWithType: GameProgress.GetGameTime
+  fullName: SortGarbage.Models.GameModels.GameProgress.GetGameTime
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64

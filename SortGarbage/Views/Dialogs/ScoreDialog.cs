@@ -13,18 +13,25 @@ using System.Windows.Forms;
 
 namespace SortGarbage.Views.Dialogs
 {
+    /// <summary>
+    /// Okienko pojawiajace sie po zakonczeniu gry
+    /// </summary>
     public partial class ScoreDialog : Form
     {
         private readonly FinalScore _finalScore;
         private HighScoreService _highScoreService;
         private string _userName;
-        
+        /// <summary>
+        /// Konstruktor
+        /// </summary>
+        /// <param name="finalScore">Wynik osiagniety w grze</param>
+        /// <param name="userName">Nazwa gracza</param>
         public ScoreDialog(FinalScore finalScore, string userName)
         {
             InitializeComponent();
             _finalScore = finalScore;
             _userName = userName;
-            _highScoreService = new HighScoreService(HighScoreRepositoryMock.GetInstance());
+            _highScoreService = new HighScoreService(new HighScoresRepository());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,7 +44,7 @@ namespace SortGarbage.Views.Dialogs
         {
             totalScoreLabel.Text = $"Wynik: {_finalScore.TotalScore}";
             totalMovesLabel.Text = $"Ruchy: {_finalScore.MovesCounter}";
-            totalTimeLabel.Text = $"Czas: {_finalScore.TotalGameTime}";
+            totalTimeLabel.Text = $"Czas: {Math.Ceiling((decimal)(_finalScore.TotalGameTime / 10000000))} s";
             label1.Text = $"{_userName} gratulacje!";
         }
 
@@ -50,6 +57,7 @@ namespace SortGarbage.Views.Dialogs
         {
             var mainMenu = new Main();
             mainMenu.Show();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)

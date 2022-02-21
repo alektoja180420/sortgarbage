@@ -1,0 +1,429 @@
+### YamlMime:ManagedReference
+items:
+- uid: SortGarbage.Controllers.HighScoresController
+  commentId: T:SortGarbage.Controllers.HighScoresController
+  id: HighScoresController
+  parent: SortGarbage.Controllers
+  children:
+  - SortGarbage.Controllers.HighScoresController.#ctor(SortGarbage.Views.Interfaces.IHighScoresView)
+  - SortGarbage.Controllers.HighScoresController.PopulateHighScores
+  langs:
+  - csharp
+  - vb
+  name: HighScoresController
+  nameWithType: HighScoresController
+  fullName: SortGarbage.Controllers.HighScoresController
+  type: Class
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/HighScoresController.cs
+    id: HighScoresController
+    path: Controllers/HighScoresController.cs
+    startLine: 14
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nKlasa sluzaca do obslugi widoku najlepszych wynikow\n"
+  example: []
+  syntax:
+    content: public class HighScoresController
+    content.vb: Public Class HighScoresController
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SortGarbage.Controllers.HighScoresController.#ctor(SortGarbage.Views.Interfaces.IHighScoresView)
+  commentId: M:SortGarbage.Controllers.HighScoresController.#ctor(SortGarbage.Views.Interfaces.IHighScoresView)
+  id: '#ctor(SortGarbage.Views.Interfaces.IHighScoresView)'
+  parent: SortGarbage.Controllers.HighScoresController
+  langs:
+  - csharp
+  - vb
+  name: HighScoresController(IHighScoresView)
+  nameWithType: HighScoresController.HighScoresController(IHighScoresView)
+  fullName: SortGarbage.Controllers.HighScoresController.HighScoresController(SortGarbage.Views.Interfaces.IHighScoresView)
+  type: Constructor
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/HighScoresController.cs
+    id: .ctor
+    path: Controllers/HighScoresController.cs
+    startLine: 22
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nKonstruktor\n"
+  example: []
+  syntax:
+    content: public HighScoresController(IHighScoresView highScoresView)
+    parameters:
+    - id: highScoresView
+      type: SortGarbage.Views.Interfaces.IHighScoresView
+      description: Interfejs widoku
+    content.vb: Public Sub New(highScoresView As IHighScoresView)
+  overload: SortGarbage.Controllers.HighScoresController.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SortGarbage.Controllers.HighScoresController.PopulateHighScores
+  commentId: M:SortGarbage.Controllers.HighScoresController.PopulateHighScores
+  id: PopulateHighScores
+  parent: SortGarbage.Controllers.HighScoresController
+  langs:
+  - csharp
+  - vb
+  name: PopulateHighScores()
+  nameWithType: HighScoresController.PopulateHighScores()
+  fullName: SortGarbage.Controllers.HighScoresController.PopulateHighScores()
+  type: Method
+  source:
+    remote:
+      path: C:/Users/48509/Desktop/sortgarbage3/sortgarbage2/SortGarbage/Controllers/HighScoresController.cs
+    id: PopulateHighScores
+    path: Controllers/HighScoresController.cs
+    startLine: 30
+  assemblies:
+  - SortGarbage
+  namespace: SortGarbage.Controllers
+  summary: "\nMetoda przekazujaca do widoku informacje o najlepszych wynikach\n"
+  example: []
+  syntax:
+    content: public void PopulateHighScores()
+    content.vb: Public Sub PopulateHighScores
+  overload: SortGarbage.Controllers.HighScoresController.PopulateHighScores*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SortGarbage.Controllers
+  commentId: N:SortGarbage.Controllers
+  name: SortGarbage.Controllers
+  nameWithType: SortGarbage.Controllers
+  fullName: SortGarbage.Controllers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SortGarbage.Controllers.HighScoresController.#ctor*
+  commentId: Overload:SortGarbage.Controllers.HighScoresController.#ctor
+  name: HighScoresController
+  nameWithType: HighScoresController.HighScoresController
+  fullName: SortGarbage.Controllers.HighScoresController.HighScoresController
+- uid: SortGarbage.Views.Interfaces.IHighScoresView
+  commentId: T:SortGarbage.Views.Interfaces.IHighScoresView
+  parent: SortGarbage.Views.Interfaces
+  name: IHighScoresView
+  nameWithType: IHighScoresView
+  fullName: SortGarbage.Views.Interfaces.IHighScoresView
+- uid: SortGarbage.Views.Interfaces
+  commentId: N:SortGarbage.Views.Interfaces
+  name: SortGarbage.Views.Interfaces
+  nameWithType: SortGarbage.Views.Interfaces
+  fullName: SortGarbage.Views.Interfaces
+- uid: SortGarbage.Controllers.HighScoresController.PopulateHighScores*
+  commentId: Overload:SortGarbage.Controllers.HighScoresController.PopulateHighScores
+  name: PopulateHighScores
+  nameWithType: HighScoresController.PopulateHighScores
+  fullName: SortGarbage.Controllers.HighScoresController.PopulateHighScores
